@@ -61,6 +61,370 @@ return [[
 '%5B%5BC%5DSymfony%5CBundle%5CFrameworkBundle%5CController%5CAbstractController%23addLink%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CFrameworkBundle%5CController%5CAbstractController%24container%5D%5B1%5D' => 1,
 '%5B%5BC%5DSymfony%5CBundle%5CFrameworkBundle%5CController%5CAbstractController%24container%5D%5B1%5D' => 2,
+'%5BApp%5CController%5CAdminsController%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CController%5CAdminsController%5D%5B1%5D' => 2,
+'%5BApp%5CController%5CAdminsController%23index%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CController%5CAdminsController%23index%5D%5B1%5D' => 2,
+'%5BApp%5CController%5CAgentsController%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CController%5CAgentsController%5D%5B1%5D' => 2,
+'%5BApp%5CController%5CAgentsController%23index%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CController%5CAgentsController%23index%5D%5B1%5D' => 2,
+'%5BApp%5CController%5CContactsController%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CController%5CContactsController%5D%5B1%5D' => 2,
+'%5BApp%5CController%5CContactsController%23index%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CController%5CContactsController%23index%5D%5B1%5D' => 2,
+'%5BApp%5CController%5CHideoutsController%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CController%5CHideoutsController%5D%5B1%5D' => 2,
+'%5BApp%5CController%5CHideoutsController%23index%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CController%5CHideoutsController%23index%5D%5B1%5D' => 2,
+'%5BApp%5CController%5CMissionsController%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CController%5CMissionsController%5D%5B1%5D' => 2,
+'%5BApp%5CController%5CMissionsController%23index%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CController%5CMissionsController%23index%5D%5B1%5D' => 2,
+'%5BApp%5CController%5CMissionsController%23showMission%5D%5B1%5D' => 3,
+'%5B%5BC%5DApp%5CController%5CMissionsController%23showMission%5D%5B1%5D' => 2,
+'%5BApp%5CController%5CMissionsController%23incrementation%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CController%5CMissionsController%23incrementation%5D%5B1%5D' => 2,
+'%5BApp%5CController%5CSkillsController%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CController%5CSkillsController%5D%5B1%5D' => 2,
+'%5BApp%5CController%5CSkillsController%23index%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CController%5CSkillsController%23index%5D%5B1%5D' => 2,
+'%5BApp%5CController%5CTargetsController%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CController%5CTargetsController%5D%5B1%5D' => 2,
+'%5BApp%5CController%5CTargetsController%23index%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CController%5CTargetsController%23index%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAdmins%5D%5B1%5D' => 4,
+'%5B%5BC%5DApp%5CEntity%5CAdmins%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAdmins%23getId%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CAdmins%23getId%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAdmins%23getLastName%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CAdmins%23getLastName%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAdmins%23setLastName%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CAdmins%23setLastName%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAdmins%23getFirstName%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CAdmins%23getFirstName%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAdmins%23setFirstName%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CAdmins%23setFirstName%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAdmins%23getEmail%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CAdmins%23getEmail%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAdmins%23setEmail%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CAdmins%23setEmail%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAdmins%23getPassword%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CAdmins%23getPassword%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAdmins%23setPassword%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CAdmins%23setPassword%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAdmins%23getCreatedAt%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CAdmins%23getCreatedAt%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAdmins%23setCreatedAt%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CAdmins%23setCreatedAt%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAdmins%24id%5D%5B1%5D' => 5,
+'%5B%5BC%5DApp%5CEntity%5CAdmins%24id%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAdmins%24lastName%5D%5B1%5D' => 6,
+'%5B%5BC%5DApp%5CEntity%5CAdmins%24lastName%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAdmins%24firstName%5D%5B1%5D' => 6,
+'%5B%5BC%5DApp%5CEntity%5CAdmins%24firstName%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAdmins%24email%5D%5B1%5D' => 7,
+'%5B%5BC%5DApp%5CEntity%5CAdmins%24email%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAdmins%24password%5D%5B1%5D' => 6,
+'%5B%5BC%5DApp%5CEntity%5CAdmins%24password%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAdmins%24createdAt%5D%5B1%5D' => 8,
+'%5B%5BC%5DApp%5CEntity%5CAdmins%24createdAt%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAgents%5D%5B1%5D' => 9,
+'%5B%5BC%5DApp%5CEntity%5CAgents%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAgents%23__construct%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CAgents%23__construct%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAgents%23getId%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CAgents%23getId%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAgents%23getLastName%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CAgents%23getLastName%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAgents%23setLastName%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CAgents%23setLastName%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAgents%23getFirstName%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CAgents%23getFirstName%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAgents%23setFirstName%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CAgents%23setFirstName%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAgents%23getCodeName%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CAgents%23getCodeName%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAgents%23setCodeName%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CAgents%23setCodeName%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAgents%23getNationality%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CAgents%23getNationality%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAgents%23setNationality%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CAgents%23setNationality%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAgents%23getSkills%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CAgents%23getSkills%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAgents%23addSkill%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CAgents%23addSkill%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAgents%23removeSkill%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CAgents%23removeSkill%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAgents%23getMissions%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CAgents%23getMissions%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAgents%23addMission%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CAgents%23addMission%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAgents%23removeMission%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CAgents%23removeMission%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAgents%24id%5D%5B1%5D' => 5,
+'%5B%5BC%5DApp%5CEntity%5CAgents%24id%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAgents%24lastName%5D%5B1%5D' => 6,
+'%5B%5BC%5DApp%5CEntity%5CAgents%24lastName%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAgents%24firstName%5D%5B1%5D' => 6,
+'%5B%5BC%5DApp%5CEntity%5CAgents%24firstName%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAgents%24codeName%5D%5B1%5D' => 6,
+'%5B%5BC%5DApp%5CEntity%5CAgents%24codeName%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAgents%24nationality%5D%5B1%5D' => 6,
+'%5B%5BC%5DApp%5CEntity%5CAgents%24nationality%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAgents%24skills%5D%5B1%5D' => 10,
+'%5B%5BC%5DApp%5CEntity%5CAgents%24skills%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CAgents%24missions%5D%5B1%5D' => 11,
+'%5B%5BC%5DApp%5CEntity%5CAgents%24missions%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CContacts%5D%5B1%5D' => 12,
+'%5B%5BC%5DApp%5CEntity%5CContacts%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CContacts%23__construct%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CContacts%23__construct%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CContacts%23getId%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CContacts%23getId%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CContacts%23getLastName%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CContacts%23getLastName%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CContacts%23setLastName%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CContacts%23setLastName%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CContacts%23getFirstName%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CContacts%23getFirstName%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CContacts%23setFirstName%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CContacts%23setFirstName%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CContacts%23getBirthDate%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CContacts%23getBirthDate%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CContacts%23setBirthDate%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CContacts%23setBirthDate%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CContacts%23getCodeName%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CContacts%23getCodeName%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CContacts%23setCodeName%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CContacts%23setCodeName%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CContacts%23getNationality%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CContacts%23getNationality%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CContacts%23setNationality%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CContacts%23setNationality%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CContacts%23getMissions%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CContacts%23getMissions%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CContacts%23addMission%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CContacts%23addMission%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CContacts%23removeMission%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CContacts%23removeMission%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CContacts%24id%5D%5B1%5D' => 5,
+'%5B%5BC%5DApp%5CEntity%5CContacts%24id%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CContacts%24lastName%5D%5B1%5D' => 6,
+'%5B%5BC%5DApp%5CEntity%5CContacts%24lastName%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CContacts%24firstName%5D%5B1%5D' => 6,
+'%5B%5BC%5DApp%5CEntity%5CContacts%24firstName%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CContacts%24birthDate%5D%5B1%5D' => 6,
+'%5B%5BC%5DApp%5CEntity%5CContacts%24birthDate%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CContacts%24codeName%5D%5B1%5D' => 6,
+'%5B%5BC%5DApp%5CEntity%5CContacts%24codeName%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CContacts%24nationality%5D%5B1%5D' => 6,
+'%5B%5BC%5DApp%5CEntity%5CContacts%24nationality%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CContacts%24missions%5D%5B1%5D' => 13,
+'%5B%5BC%5DApp%5CEntity%5CContacts%24missions%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CHideouts%5D%5B1%5D' => 14,
+'%5B%5BC%5DApp%5CEntity%5CHideouts%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CHideouts%23__construct%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CHideouts%23__construct%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CHideouts%23getId%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CHideouts%23getId%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CHideouts%23getAddress%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CHideouts%23getAddress%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CHideouts%23setAddress%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CHideouts%23setAddress%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CHideouts%23getType%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CHideouts%23getType%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CHideouts%23setType%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CHideouts%23setType%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CHideouts%23getCountry%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CHideouts%23getCountry%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CHideouts%23setCountry%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CHideouts%23setCountry%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CHideouts%23getMissions%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CHideouts%23getMissions%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CHideouts%23addMission%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CHideouts%23addMission%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CHideouts%23removeMission%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CHideouts%23removeMission%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CHideouts%24id%5D%5B1%5D' => 5,
+'%5B%5BC%5DApp%5CEntity%5CHideouts%24id%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CHideouts%24address%5D%5B1%5D' => 6,
+'%5B%5BC%5DApp%5CEntity%5CHideouts%24address%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CHideouts%24type%5D%5B1%5D' => 6,
+'%5B%5BC%5DApp%5CEntity%5CHideouts%24type%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CHideouts%24country%5D%5B1%5D' => 6,
+'%5B%5BC%5DApp%5CEntity%5CHideouts%24country%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CHideouts%24missions%5D%5B1%5D' => 15,
+'%5B%5BC%5DApp%5CEntity%5CHideouts%24missions%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%5D%5B1%5D' => 16,
+'%5B%5BC%5DApp%5CEntity%5CMissions%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%23__construct%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CMissions%23__construct%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%23getId%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CMissions%23getId%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%23getTitle%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CMissions%23getTitle%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%23setTitle%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CMissions%23setTitle%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%23getDescription%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CMissions%23getDescription%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%23setDescription%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CMissions%23setDescription%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%23getCountry%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CMissions%23getCountry%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%23setCountry%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CMissions%23setCountry%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%23getType%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CMissions%23getType%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%23setType%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CMissions%23setType%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%23getStatus%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CMissions%23getStatus%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%23setStatus%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CMissions%23setStatus%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%23getAgents%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CMissions%23getAgents%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%23addAgent%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CMissions%23addAgent%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%23removeAgent%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CMissions%23removeAgent%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%23getSkills%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CMissions%23getSkills%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%23setSkills%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CMissions%23setSkills%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%23getTargets%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CMissions%23getTargets%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%23addTarget%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CMissions%23addTarget%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%23removeTarget%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CMissions%23removeTarget%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%23getStartDate%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CMissions%23getStartDate%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%23setStartDate%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CMissions%23setStartDate%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%23getEndDate%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CMissions%23getEndDate%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%23setEndDate%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CMissions%23setEndDate%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%23getContacts%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CMissions%23getContacts%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%23addContact%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CMissions%23addContact%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%23removeContact%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CMissions%23removeContact%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%23getHideouts%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CMissions%23getHideouts%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%23setHideouts%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CMissions%23setHideouts%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%24id%5D%5B1%5D' => 5,
+'%5B%5BC%5DApp%5CEntity%5CMissions%24id%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%24title%5D%5B1%5D' => 6,
+'%5B%5BC%5DApp%5CEntity%5CMissions%24title%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%24description%5D%5B1%5D' => 6,
+'%5B%5BC%5DApp%5CEntity%5CMissions%24description%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%24country%5D%5B1%5D' => 6,
+'%5B%5BC%5DApp%5CEntity%5CMissions%24country%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%24type%5D%5B1%5D' => 6,
+'%5B%5BC%5DApp%5CEntity%5CMissions%24type%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%24status%5D%5B1%5D' => 6,
+'%5B%5BC%5DApp%5CEntity%5CMissions%24status%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%24agents%5D%5B1%5D' => 17,
+'%5B%5BC%5DApp%5CEntity%5CMissions%24agents%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%24skills%5D%5B1%5D' => 18,
+'%5B%5BC%5DApp%5CEntity%5CMissions%24skills%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%24targets%5D%5B1%5D' => 19,
+'%5B%5BC%5DApp%5CEntity%5CMissions%24targets%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%24startDate%5D%5B1%5D' => 6,
+'%5B%5BC%5DApp%5CEntity%5CMissions%24startDate%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%24endDate%5D%5B1%5D' => 6,
+'%5B%5BC%5DApp%5CEntity%5CMissions%24endDate%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%24contacts%5D%5B1%5D' => 20,
+'%5B%5BC%5DApp%5CEntity%5CMissions%24contacts%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CMissions%24hideouts%5D%5B1%5D' => 21,
+'%5B%5BC%5DApp%5CEntity%5CMissions%24hideouts%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CSkills%5D%5B1%5D' => 22,
+'%5B%5BC%5DApp%5CEntity%5CSkills%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CSkills%23__construct%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CSkills%23__construct%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CSkills%23getId%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CSkills%23getId%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CSkills%23getName%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CSkills%23getName%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CSkills%23setName%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CSkills%23setName%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CSkills%23getDescription%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CSkills%23getDescription%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CSkills%23setDescription%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CSkills%23setDescription%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CSkills%23getAgents%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CSkills%23getAgents%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CSkills%23addAgent%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CSkills%23addAgent%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CSkills%23removeAgent%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CSkills%23removeAgent%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CSkills%23getMissions%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CSkills%23getMissions%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CSkills%23addMission%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CSkills%23addMission%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CSkills%23removeMission%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CSkills%23removeMission%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CSkills%24id%5D%5B1%5D' => 5,
+'%5B%5BC%5DApp%5CEntity%5CSkills%24id%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CSkills%24name%5D%5B1%5D' => 6,
+'%5B%5BC%5DApp%5CEntity%5CSkills%24name%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CSkills%24description%5D%5B1%5D' => 23,
+'%5B%5BC%5DApp%5CEntity%5CSkills%24description%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CSkills%24agents%5D%5B1%5D' => 24,
+'%5B%5BC%5DApp%5CEntity%5CSkills%24agents%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CSkills%24missions%5D%5B1%5D' => 25,
+'%5B%5BC%5DApp%5CEntity%5CSkills%24missions%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTargets%5D%5B1%5D' => 26,
+'%5B%5BC%5DApp%5CEntity%5CTargets%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTargets%23__construct%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CTargets%23__construct%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTargets%23getId%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CTargets%23getId%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTargets%23getLastName%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CTargets%23getLastName%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTargets%23setLastName%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CTargets%23setLastName%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTargets%23getFirstName%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CTargets%23getFirstName%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTargets%23setFirstName%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CTargets%23setFirstName%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTargets%23getBirthDate%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CTargets%23getBirthDate%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTargets%23setBirthDate%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CTargets%23setBirthDate%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTargets%23getCodeName%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CTargets%23getCodeName%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTargets%23setCodeName%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CTargets%23setCodeName%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTargets%23getNationality%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CTargets%23getNationality%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTargets%23setNationality%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CTargets%23setNationality%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTargets%23getMissions%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CTargets%23getMissions%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTargets%23addMission%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CTargets%23addMission%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTargets%23removeMission%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CTargets%23removeMission%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTargets%24id%5D%5B1%5D' => 5,
+'%5B%5BC%5DApp%5CEntity%5CTargets%24id%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTargets%24lastName%5D%5B1%5D' => 6,
+'%5B%5BC%5DApp%5CEntity%5CTargets%24lastName%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTargets%24firstName%5D%5B1%5D' => 6,
+'%5B%5BC%5DApp%5CEntity%5CTargets%24firstName%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTargets%24birthDate%5D%5B1%5D' => 6,
+'%5B%5BC%5DApp%5CEntity%5CTargets%24birthDate%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTargets%24codeName%5D%5B1%5D' => 6,
+'%5B%5BC%5DApp%5CEntity%5CTargets%24codeName%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTargets%24nationality%5D%5B1%5D' => 6,
+'%5B%5BC%5DApp%5CEntity%5CTargets%24nationality%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CTargets%24missions%5D%5B1%5D' => 27,
+'%5B%5BC%5DApp%5CEntity%5CTargets%24missions%5D%5B1%5D' => 2,
 '%5BDoctrine%5CBundle%5CDoctrineBundle%5CController%5CProfilerController%5D%5B1%5D' => 1,
 '%5B%5BC%5DDoctrine%5CBundle%5CDoctrineBundle%5CController%5CProfilerController%5D%5B1%5D' => 2,
 '%5BDoctrine%5CBundle%5CDoctrineBundle%5CController%5CProfilerController%23setContainer%5D%5B1%5D' => 1,
@@ -587,11 +951,557 @@ return [[
 '%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CRouterController%24routes%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CWebProfilerBundle%5CController%5CRouterController%24expressionLanguageProviders%5D%5B1%5D' => 1,
 '%5B%5BC%5DSymfony%5CBundle%5CWebProfilerBundle%5CController%5CRouterController%24expressionLanguageProviders%5D%5B1%5D' => 2,
+'%5BSymfony%5CComponent%5CSecurity%5CHttp%5CController%5CUserValueResolver%5D%5B1%5D' => 1,
+'%5B%5BC%5DSymfony%5CComponent%5CSecurity%5CHttp%5CController%5CUserValueResolver%5D%5B1%5D' => 2,
+'%5BSymfony%5CComponent%5CSecurity%5CHttp%5CController%5CUserValueResolver%23__construct%5D%5B1%5D' => 1,
+'%5B%5BC%5DSymfony%5CComponent%5CSecurity%5CHttp%5CController%5CUserValueResolver%23__construct%5D%5B1%5D' => 2,
+'%5BSymfony%5CComponent%5CSecurity%5CHttp%5CController%5CUserValueResolver%23supports%5D%5B1%5D' => 1,
+'%5B%5BC%5DSymfony%5CComponent%5CSecurity%5CHttp%5CController%5CUserValueResolver%23supports%5D%5B1%5D' => 2,
+'%5BSymfony%5CComponent%5CSecurity%5CHttp%5CController%5CUserValueResolver%23resolve%5D%5B1%5D' => 1,
+'%5B%5BC%5DSymfony%5CComponent%5CSecurity%5CHttp%5CController%5CUserValueResolver%23resolve%5D%5B1%5D' => 2,
+'%5BSymfony%5CComponent%5CSecurity%5CHttp%5CController%5CUserValueResolver%24tokenStorage%5D%5B1%5D' => 1,
+'%5B%5BC%5DSymfony%5CComponent%5CSecurity%5CHttp%5CController%5CUserValueResolver%24tokenStorage%5D%5B1%5D' => 2,
 
 ], [
 
 0 => 'N;',
 1 => [],
-2 => 1616146773,
+2 => 1616404870,
+3 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+        ],
+        null,
+        [
+            'Symfony\\Component\\Routing\\Annotation\\Route' => [
+                'path' => [
+                    '/missions/{id}',
+                ],
+                'name' => [
+                    'mission_details',
+                ],
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+},
+4 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'repositoryClass' => [
+                    'App\\Repository\\AdminsRepository',
+                ],
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+},
+5 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Id'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Id')),
+            clone ($p['Doctrine\\ORM\\Mapping\\GeneratedValue'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\GeneratedValue')),
+            clone ($p['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'type' => [
+                    2 => 'integer',
+                ],
+            ],
+        ],
+        [
+            $o[0],
+            $o[1],
+            $o[2],
+        ],
+        []
+    );
+},
+6 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'length' => [
+                    255,
+                ],
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+},
+7 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'length' => [
+                    254,
+                ],
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+},
+8 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'type' => [
+                    'datetime',
+                ],
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+},
+9 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'repositoryClass' => [
+                    'App\\Repository\\AgentsRepository',
+                ],
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+},
+10 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\ManyToMany'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ManyToMany')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'targetEntity' => [
+                    'App\\Entity\\Skills',
+                ],
+                'mappedBy' => [
+                    'agents',
+                ],
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+},
+11 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\ManyToMany'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ManyToMany')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'targetEntity' => [
+                    'App\\Entity\\Missions',
+                ],
+                'mappedBy' => [
+                    'agents',
+                ],
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+},
+12 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'repositoryClass' => [
+                    'App\\Repository\\ContactsRepository',
+                ],
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+},
+13 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\ManyToMany'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ManyToMany')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'targetEntity' => [
+                    'App\\Entity\\Missions',
+                ],
+                'inversedBy' => [
+                    'contacts',
+                ],
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+},
+14 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'repositoryClass' => [
+                    'App\\Repository\\HideoutsRepository',
+                ],
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+},
+15 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\OneToMany'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\OneToMany')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'mappedBy' => [
+                    'hideouts',
+                ],
+                'targetEntity' => [
+                    'App\\Entity\\Missions',
+                ],
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+},
+16 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'repositoryClass' => [
+                    'App\\Repository\\MissionsRepository',
+                ],
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+},
+17 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\ManyToMany'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ManyToMany')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'targetEntity' => [
+                    'App\\Entity\\Agents',
+                ],
+                'inversedBy' => [
+                    'missions',
+                ],
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+},
+18 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ManyToOne'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ManyToOne')),
+            clone ($p['Doctrine\\ORM\\Mapping\\JoinColumn'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\JoinColumn')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'targetEntity' => [
+                    'App\\Entity\\Skills',
+                ],
+                'cascade' => [
+                    [
+                        'persist',
+                    ],
+                ],
+                'inversedBy' => [
+                    'missions',
+                ],
+                'nullable' => [
+                    1 => false,
+                ],
+            ],
+        ],
+        [
+            $o[0],
+            $o[1],
+        ],
+        []
+    );
+},
+19 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\ManyToMany'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ManyToMany')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'targetEntity' => [
+                    'App\\Entity\\Targets',
+                ],
+                'inversedBy' => [
+                    'missions',
+                ],
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+},
+20 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\ManyToMany'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ManyToMany')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'targetEntity' => [
+                    'App\\Entity\\Contacts',
+                ],
+                'mappedBy' => [
+                    'missions',
+                ],
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+},
+21 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\ManyToOne'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ManyToOne')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'targetEntity' => [
+                    'App\\Entity\\Hideouts',
+                ],
+                'cascade' => [
+                    [
+                        'persist',
+                    ],
+                ],
+                'inversedBy' => [
+                    'missions',
+                ],
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+},
+22 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'repositoryClass' => [
+                    'App\\Repository\\SkillsRepository',
+                ],
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+},
+23 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'type' => [
+                    'text',
+                ],
+                'nullable' => [
+                    true,
+                ],
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+},
+24 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\ManyToMany'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ManyToMany')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'targetEntity' => [
+                    'App\\Entity\\Agents',
+                ],
+                'inversedBy' => [
+                    'skills',
+                ],
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+},
+25 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\OneToMany'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\OneToMany')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'mappedBy' => [
+                    'skills',
+                ],
+                'targetEntity' => [
+                    'App\\Entity\\Missions',
+                ],
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+},
+26 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'repositoryClass' => [
+                    'App\\Repository\\TargetsRepository',
+                ],
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+},
+27 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\ManyToMany'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ManyToMany')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'targetEntity' => [
+                    'App\\Entity\\Missions',
+                ],
+                'mappedBy' => [
+                    'targets',
+                ],
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+},
 
 ]];

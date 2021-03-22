@@ -9,7 +9,7 @@
 
     <h1>{{ mission.title }}</h1>
 
-    <table class="table table-hover table-repsonsive text-justify align-middle">
+    <table class="table table-hover table-responsive text-justify align-middle">
         <tbody>
             <tr>
                 <th>Title</th>
@@ -44,25 +44,33 @@
                 <td>{{ mission.skills.name }}</td>
             </tr>
             <tr>
-                <th>Involved agents</th>
+                <th><a href="{{ path('agents_index') }}" style="color: black">Agents</a></th>
                     {% for agent in mission.agents %}
-                        <td>{{ agent.codeName }}</td>
+                        <td>
+                            <a href="{{ path('agent_details', {'id': agent.id}) }}">{{ agent.codeName }}</a>
+                        </td>
                     {% endfor %}
             </tr>
             <tr>
-                <th>TARGETS</th>
+                <th><a href="#" style="color: black">Targets</a></th>
                 {% for target in mission.targets %}
                     <td>{{ target.codeName }}</td>
                 {% endfor %}
             </tr>
             <tr>
-                <th>Involved contacts</th>
+                <th><a href="#" style="color: black">Contacts</a></th>
                 {% for contact in mission.contacts %}
-                    <td>{{ contact.codeName }}</td>
+                    <td>
+                        {{ contact.codeName }}
+                        <br>
+                        <a href="{{ path('agent_details', {'id': agent.id}) }}">See contact's details</a>
+                    </td>
                 {% endfor %}
             </tr>
 
         </tbody>
     </table>
-    <a href="{{ path('app.home') }}">Back to missions' index</a>
+    <button class="btn btn-lg btn-warning mt-3 mx-2">
+        <a href="{{ path('app.home') }}" style="color: white; text-decoration: none">Back to missions' index</a>
+    </button>
 {% endblock %}

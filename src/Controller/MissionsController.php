@@ -28,7 +28,7 @@ class MissionsController extends AbstractController
         ]);
     }
 
-    public function incrementation(): Response
+   /* public function incrementation(): Response
     {
         $mission1 = new Missions();
         $em = $this->getDoctrine()->getManager();
@@ -44,5 +44,5 @@ class MissionsController extends AbstractController
 
         $em->persist($mission1);
         $em->flush();
-    }
+    } */
 }

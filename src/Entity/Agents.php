@@ -41,11 +41,13 @@ class Agents
 
     /**
      * @ORM\ManyToMany(targetEntity=Skills::class, mappedBy="agents")
+     * @ORM\JoinTable(name="skills_agents")
      */
     private $skills;
 
     /**
      * @ORM\ManyToMany(targetEntity=Missions::class, mappedBy="agents")
+     * @ORM\JoinTable(name="missions_agents")
      */
     private $missions;
 

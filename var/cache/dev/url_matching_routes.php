@@ -13,11 +13,12 @@ return [
         '/_profiler/search_bar' => [[['_route' => '_profiler_search_bar', '_controller' => 'web_profiler.controller.profiler::searchBarAction'], null, null, null, false, false, null]],
         '/_profiler/phpinfo' => [[['_route' => '_profiler_phpinfo', '_controller' => 'web_profiler.controller.profiler::phpinfoAction'], null, null, null, false, false, null]],
         '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
-        '/admins' => [[['_route' => 'admins', '_controller' => 'App\\Controller\\AdminsController::index'], null, null, null, false, false, null]],
-        '/agents' => [[['_route' => 'agents', '_controller' => 'App\\Controller\\AgentsController::index'], null, null, null, false, false, null]],
+        '/agents' => [[['_route' => 'agents_index', '_controller' => 'App\\Controller\\AgentsController::index'], null, null, null, false, false, null]],
         '/contacts' => [[['_route' => 'contacts', '_controller' => 'App\\Controller\\ContactsController::index'], null, null, null, false, false, null]],
         '/hideouts' => [[['_route' => 'hideouts', '_controller' => 'App\\Controller\\HideoutsController::index'], null, null, null, false, false, null]],
         '/' => [[['_route' => 'app.home', '_controller' => 'App\\Controller\\MissionsController::index'], null, null, null, false, false, null]],
+        '/login' => [[['_route' => 'app_login', '_controller' => 'App\\Controller\\SecurityController::login'], null, null, null, false, false, null]],
+        '/logout' => [[['_route' => 'app_logout', '_controller' => 'App\\Controller\\SecurityController::logout'], null, null, null, false, false, null]],
         '/skills' => [[['_route' => 'skills', '_controller' => 'App\\Controller\\SkillsController::index'], null, null, null, false, false, null]],
         '/targets' => [[['_route' => 'targets', '_controller' => 'App\\Controller\\TargetsController::index'], null, null, null, false, false, null]],
     ],
@@ -38,7 +39,8 @@ return [
                         .'|(*:159)'
                     .')'
                 .')'
-                .'|/missions/([^/]++)(*:187)'
+                .'|/agents/([^/]++)(*:185)'
+                .'|/missions/([^/]++)(*:211)'
             .')/?$}sDu',
     ],
     [ // $dynamicRoutes
@@ -49,7 +51,8 @@ return [
         136 => [[['_route' => '_profiler_exception', '_controller' => 'web_profiler.controller.exception_panel::body'], ['token'], null, null, false, false, null]],
         149 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception_panel::stylesheet'], ['token'], null, null, false, false, null]],
         159 => [[['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null]],
-        187 => [
+        185 => [[['_route' => 'agent_details', '_controller' => 'App\\Controller\\AgentsController::showMission'], ['id'], null, null, false, true, null]],
+        211 => [
             [['_route' => 'mission_details', '_controller' => 'App\\Controller\\MissionsController::showMission'], ['id'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],

@@ -1,0 +1,54 @@
+{% extends 'missions/index.html.twig' %}
+
+
+{% block title %}
+    {{ agent.codeName }} - {{ agent.firstname }} {{ agent.lastname }}
+{% endblock %}
+
+{% block body %}
+
+    <h1>{{ agent.codeName }}</h1>
+
+    <table class="table table-hover table-responsive text-justify align-middle">
+        <tbody>
+        <tr>
+            <th>Lastname</th>
+            <td>{{ agent.lastName }}</td>
+        </tr>
+        <tr>
+            <th>Firstname</th>
+            <td>{{ agent.firstName }}</td>
+        </tr>
+        <tr>
+            <th>Codename</th>
+            <td>{{ agent.codeName }}</td>
+        </tr>
+        <tr>
+            <th>Nationality</th>
+            <td>{{ agent.nationality }}</td>
+        </tr>
+        <tr>
+            <th>Skills</th>
+            {% for skill in agent.skills %}
+                <td>{{ skill.name }}</td>
+            {% endfor %}
+        </tr>
+        <tr>
+            <th><a href="{{ path('app.home') }}">Missions</a></th>
+            {% for mission in agent.missions %}
+                <td>
+                    <a href="{{ path('mission_details', {'id': mission.id}) }}">
+                        {{ mission.title }}
+                    </a>
+                </td>
+            {% endfor %}
+        </tr>
+        </tbody>
+    </table>
+    <button class="btn btn-lg btn-warning mt-3 mx-2">
+        <a href="{{ path('app.home') }}" style="color: white; text-decoration: none">Back to missions' index</a>
+    </button>
+    <button class="btn btn-lg btn-primary mt-3 mx-2">
+        <a href="{{ path('agents_index') }}" style="color: white; text-decoration: none">Back to agents' index</a>
+    </button>
+{% endblock %}

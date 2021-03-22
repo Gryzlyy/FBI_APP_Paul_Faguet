@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'ecec19a6225351f5d58b11b748a3ccae9c5e8a82',
+    'reference' => 'd6078b981fca7891d2933d419c33b698dbd3b9bb',
     'name' => '__root__',
   ),
   'versions' => 
@@ -41,7 +41,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'ecec19a6225351f5d58b11b748a3ccae9c5e8a82',
+      'reference' => 'd6078b981fca7891d2933d419c33b698dbd3b9bb',
     ),
     'composer/package-versions-deprecated' => 
     array (
@@ -615,6 +615,24 @@ private static $installed = array (
       ),
       'reference' => 'dc3063ba22c2a1fd2f45ed856374d79114998f91',
     ),
+    'symfony/property-access' => 
+    array (
+      'pretty_version' => 'v5.2.4',
+      'version' => '5.2.4.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '3af8ed262bd3217512a13b023981fe68f36ad5f3',
+    ),
+    'symfony/property-info' => 
+    array (
+      'pretty_version' => 'v5.2.4',
+      'version' => '5.2.4.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '7185bbc74e6f49c3f1b5936b4d9e4ca133921189',
+    ),
     'symfony/proxy-manager-bridge' => 
     array (
       'pretty_version' => 'v5.2.4',
@@ -632,6 +650,51 @@ private static $installed = array (
       array (
       ),
       'reference' => 'cafa138128dfd6ab6be1abf6279169957b34f662',
+    ),
+    'symfony/security-bundle' => 
+    array (
+      'pretty_version' => 'v5.2.5',
+      'version' => '5.2.5.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'e6b7c0cc8f0ef361c7dd5cb8d048863addea26e5',
+    ),
+    'symfony/security-core' => 
+    array (
+      'pretty_version' => 'v5.2.5',
+      'version' => '5.2.5.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '688b21a293a7e4168e8e493a97625ac24280629f',
+    ),
+    'symfony/security-csrf' => 
+    array (
+      'pretty_version' => 'v5.2.4',
+      'version' => '5.2.4.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'e22ef49d5d3773014942f3dfe301b168a4a833dc',
+    ),
+    'symfony/security-guard' => 
+    array (
+      'pretty_version' => 'v5.2.4',
+      'version' => '5.2.4.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'a191352047f2ea0d927c62e1a2f261cf906d1bde',
+    ),
+    'symfony/security-http' => 
+    array (
+      'pretty_version' => 'v5.2.5',
+      'version' => '5.2.5.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'e7947dac6e632b40aea74f6f556c75761d1ab1e6',
     ),
     'symfony/service-contracts' => 
     array (
