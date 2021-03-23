@@ -105,9 +105,15 @@ class __TwigTemplate_22825d49c7c41f9eaafd9b7a547b948fbf21567a195f2af7c06dc8c6b9b
         echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 13, $this->source); })()), 'widget');
         echo "
     <button class=\"btn btn-success m-3\" type=\"submit\">SEND</button>
+
     ";
-        // line 15
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 15, $this->source); })()), 'form_end');
+        // line 16
+        $this->loadTemplate("_cancelBtn.html.twig", "hideouts/editHideout.html.twig", 16)->display($context);
+        // line 17
+        echo "
+    ";
+        // line 18
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 18, $this->source); })()), 'form_end');
         echo "
 
 ";
@@ -131,7 +137,7 @@ class __TwigTemplate_22825d49c7c41f9eaafd9b7a547b948fbf21567a195f2af7c06dc8c6b9b
 
     public function getDebugInfo()
     {
-        return array (  110 => 15,  105 => 13,  101 => 12,  96 => 10,  93 => 9,  90 => 8,  80 => 7,  69 => 4,  59 => 3,  36 => 1,);
+        return array (  116 => 18,  113 => 17,  111 => 16,  105 => 13,  101 => 12,  96 => 10,  93 => 9,  90 => 8,  80 => 7,  69 => 4,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -150,6 +156,9 @@ class __TwigTemplate_22825d49c7c41f9eaafd9b7a547b948fbf21567a195f2af7c06dc8c6b9b
     {{ form_start(form) }}
     {{ form_widget(form) }}
     <button class=\"btn btn-success m-3\" type=\"submit\">SEND</button>
+
+    {% include '_cancelBtn.html.twig' %}
+
     {{ form_end(form) }}
 
 {% endblock %}", "hideouts/editHideout.html.twig", "/Users/paulfaguet/Desktop/FBI_APP/templates/hideouts/editHideout.html.twig");

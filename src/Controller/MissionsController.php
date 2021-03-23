@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Missions;
 use App\Form\AddMissionType;
+use App\Repository\ContactsRepository;
 use App\Repository\MissionsRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -70,5 +71,23 @@ class MissionsController extends AbstractController
             'mission' => $mission,
             'form' => $form->createView(),
         ]);
+    }
+
+    /**
+     * @Route ("/missions/{id}/delete", name="mission_delete", methods={"GET"})
+     */
+    public function deleteContact(int $id, MissionsRepository $missionsRepository): Response
+    {
+        $entityManager = $this->getDoctrine()->getManager();
+
+        $mission = $missionsRepository->find($id);
+        if (!$mission) {
+            return $this->redirectToRoute('app.home');
+        }
+
+        $entityManager->remove($mission);
+        $entityManager->flush();
+
+        return $this->redirectToRoute('app.home');
     }
 }

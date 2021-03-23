@@ -52,10 +52,16 @@ class __TwigTemplate_29ce93fb016d955db0c59de7491abc08ef3d5c516d69a2fa8982ca0c190
         // line 4
         echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 4, $this->source); })()), 'widget');
         echo "
-    <button class=\"btn btn-success m-3\" type=\"submit\">SEND</button>
+    <button class=\"btn btn-success my-3 mx-5\" type=\"submit\">Send</button>
+
     ";
-        // line 6
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 6, $this->source); })()), 'form_end');
+        // line 7
+        $this->loadTemplate("_cancelBtn.html.twig", "_form.html.twig", 7)->display($context);
+        // line 8
+        echo "
+    ";
+        // line 9
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 9, $this->source); })()), 'form_end');
         echo "
 ";
         
@@ -78,7 +84,7 @@ class __TwigTemplate_29ce93fb016d955db0c59de7491abc08ef3d5c516d69a2fa8982ca0c190
 
     public function getDebugInfo()
     {
-        return array (  58 => 6,  53 => 4,  49 => 3,  46 => 2,  43 => 1,);
+        return array (  64 => 9,  61 => 8,  59 => 7,  53 => 4,  49 => 3,  46 => 2,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -87,7 +93,10 @@ class __TwigTemplate_29ce93fb016d955db0c59de7491abc08ef3d5c516d69a2fa8982ca0c190
 
     {{ form_start(form) }}
     {{ form_widget(form) }}
-    <button class=\"btn btn-success m-3\" type=\"submit\">SEND</button>
+    <button class=\"btn btn-success my-3 mx-5\" type=\"submit\">Send</button>
+
+    {% include '_cancelBtn.html.twig' %}
+
     {{ form_end(form) }}
 ", "_form.html.twig", "/Users/paulfaguet/Desktop/FBI_APP/templates/_form.html.twig");
     }

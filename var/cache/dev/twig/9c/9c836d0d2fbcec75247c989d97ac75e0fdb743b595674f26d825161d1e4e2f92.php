@@ -197,7 +197,7 @@ class __TwigTemplate_3b822ef1cc0bc1e1fbbb79cab192c7432b6028108b902c0d8479a115f52
     <button class=\"btn btn-md btn-danger mx-1 mb-5\">
         <a href=\"";
         // line 62
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("target_update", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["target"]) || array_key_exists("target", $context) ? $context["target"] : (function () { throw new RuntimeError('Variable "target" does not exist.', 62, $this->source); })()), "id", [], "any", false, false, false, 62)]), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("target_delete", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["target"]) || array_key_exists("target", $context) ? $context["target"] : (function () { throw new RuntimeError('Variable "target" does not exist.', 62, $this->source); })()), "id", [], "any", false, false, false, 62)]), "html", null, true);
         echo "\" style=\"color: white; text-decoration: none\">
             Delete \"";
         // line 63
@@ -292,7 +292,7 @@ class __TwigTemplate_3b822ef1cc0bc1e1fbbb79cab192c7432b6028108b902c0d8479a115f52
         </a>
     </button>
     <button class=\"btn btn-md btn-danger mx-1 mb-5\">
-        <a href=\"{{ path('target_update', {'id': target.id}) }}\" style=\"color: white; text-decoration: none\">
+        <a href=\"{{ path('target_delete', {'id': target.id}) }}\" style=\"color: white; text-decoration: none\">
             Delete \"{{ target.codeName }}\"
         </a>
     </button>

@@ -87,17 +87,11 @@ class __TwigTemplate_8a78a21a7107e3ac8626dbdff17d12163bcdc5473d7c1e6dfd4cfea987c
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 8
-        echo "    ";
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 8, $this->source); })()), 'form_start');
         echo "
     ";
         // line 9
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 9, $this->source); })()), 'widget');
-        echo "
-    <input type=\"submit\" />
-    ";
-        // line 11
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 11, $this->source); })()), 'form_end');
+        $this->loadTemplate("_form.html.twig", "skills/addSkill.html.twig", 9)->display($context);
+        // line 10
         echo "
 ";
         
@@ -120,7 +114,7 @@ class __TwigTemplate_8a78a21a7107e3ac8626dbdff17d12163bcdc5473d7c1e6dfd4cfea987c
 
     public function getDebugInfo()
     {
-        return array (  100 => 11,  95 => 9,  90 => 8,  80 => 7,  69 => 4,  59 => 3,  36 => 1,);
+        return array (  95 => 10,  93 => 9,  90 => 8,  80 => 7,  69 => 4,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -132,10 +126,9 @@ class __TwigTemplate_8a78a21a7107e3ac8626dbdff17d12163bcdc5473d7c1e6dfd4cfea987c
 {% endblock %}
 
 {% block body %}
-    {{ form_start(form) }}
-    {{ form_widget(form) }}
-    <input type=\"submit\" />
-    {{ form_end(form) }}
+
+    {% include '_form.html.twig' %}
+
 {% endblock %}", "skills/addSkill.html.twig", "/Users/paulfaguet/Desktop/FBI_APP/templates/skills/addSkill.html.twig");
     }
 }

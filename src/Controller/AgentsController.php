@@ -72,4 +72,22 @@ class AgentsController extends AbstractController
             'form' => $form->createView(),
         ]);
     }
+
+    /**
+     * @Route ("/agents/{id}/delete", name="agent_delete", methods={"GET"})
+     */
+    public function deleteContact(int $id, AgentsRepository $agentsRepository): Response
+    {
+        $entityManager = $this->getDoctrine()->getManager();
+
+        $agent = $agentsRepository->find($id);
+        if (!$agent) {
+            return $this->redirectToRoute('agents_index');
+        }
+
+        $entityManager->remove($agent);
+        $entityManager->flush();
+
+        return $this->redirectToRoute('agents_index');
+    }
 }

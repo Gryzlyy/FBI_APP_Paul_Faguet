@@ -104,10 +104,15 @@ class __TwigTemplate_023ffcb1c786883088823a77d8410d1214c0aaf5787ff73656c1a26a705
         // line 13
         echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 13, $this->source); })()), 'widget');
         echo "
-    <button class=\"btn btn-success m-3\" type=\"submit\">SEND</button>
+
+    <button class=\"btn btn-success m-3\" type=\"submit\">Send</button>
+
     ";
-        // line 15
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 15, $this->source); })()), 'form_end');
+        // line 17
+        $this->loadTemplate("_cancelBtn.html.twig", "skills/editSkill.html.twig", 17)->display($context);
+        // line 18
+        echo "    ";
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 18, $this->source); })()), 'form_end');
         echo "
 
 ";
@@ -131,7 +136,7 @@ class __TwigTemplate_023ffcb1c786883088823a77d8410d1214c0aaf5787ff73656c1a26a705
 
     public function getDebugInfo()
     {
-        return array (  110 => 15,  105 => 13,  101 => 12,  96 => 10,  93 => 9,  90 => 8,  80 => 7,  69 => 4,  59 => 3,  36 => 1,);
+        return array (  114 => 18,  112 => 17,  105 => 13,  101 => 12,  96 => 10,  93 => 9,  90 => 8,  80 => 7,  69 => 4,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -149,7 +154,10 @@ class __TwigTemplate_023ffcb1c786883088823a77d8410d1214c0aaf5787ff73656c1a26a705
 
     {{ form_start(form) }}
     {{ form_widget(form) }}
-    <button class=\"btn btn-success m-3\" type=\"submit\">SEND</button>
+
+    <button class=\"btn btn-success m-3\" type=\"submit\">Send</button>
+
+    {% include '_cancelBtn.html.twig' %}
     {{ form_end(form) }}
 
 {% endblock %}", "skills/editSkill.html.twig", "/Users/paulfaguet/Desktop/FBI_APP/templates/skills/editSkill.html.twig");

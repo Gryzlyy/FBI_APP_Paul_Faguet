@@ -71,4 +71,22 @@ class HideoutsController extends AbstractController
             'form' => $form->createView(),
         ]);
     }
+
+    /**
+     * @Route ("/hideouts/{id}/delete", name="hideout_delete", methods={"GET"})
+     */
+    public function deleteContact(int $id, HideoutsRepository $hideoutsRepository): Response
+    {
+        $entityManager = $this->getDoctrine()->getManager();
+
+        $hideout = $hideoutsRepository->find($id);
+        if (!$hideout) {
+            return $this->redirectToRoute('hideouts_index');
+        }
+
+        $entityManager->remove($hideout);
+        $entityManager->flush();
+
+        return $this->redirectToRoute('hideouts_index');
+    }
 }

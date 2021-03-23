@@ -66,7 +66,7 @@ class __TwigTemplate_e370e9accb59865154bda49c2a0a0c6469e56fecd7ffdfe5775fbd1860d
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
         // line 4
-        echo "    New Agent
+        echo "    New Hideout
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -90,21 +90,8 @@ class __TwigTemplate_e370e9accb59865154bda49c2a0a0c6469e56fecd7ffdfe5775fbd1860d
         echo "
     ";
         // line 9
-        $this->loadTemplate("_header.html.twig", "hideouts/addHideout.html.twig", 9)->display($context);
+        $this->loadTemplate("_form.html.twig", "hideouts/addHideout.html.twig", 9)->display($context);
         // line 10
-        echo "
-    ";
-        // line 11
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 11, $this->source); })()), 'form_start');
-        echo "
-    ";
-        // line 12
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 12, $this->source); })()), 'widget');
-        echo "
-    <input type=\"submit\" />
-    ";
-        // line 14
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 14, $this->source); })()), 'form_end');
         echo "
 ";
         
@@ -127,7 +114,7 @@ class __TwigTemplate_e370e9accb59865154bda49c2a0a0c6469e56fecd7ffdfe5775fbd1860d
 
     public function getDebugInfo()
     {
-        return array (  107 => 14,  102 => 12,  98 => 11,  95 => 10,  93 => 9,  90 => 8,  80 => 7,  69 => 4,  59 => 3,  36 => 1,);
+        return array (  95 => 10,  93 => 9,  90 => 8,  80 => 7,  69 => 4,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -135,17 +122,13 @@ class __TwigTemplate_e370e9accb59865154bda49c2a0a0c6469e56fecd7ffdfe5775fbd1860d
         return new Source("{% extends 'base.html.twig' %}
 
 {% block title %}
-    New Agent
+    New Hideout
 {% endblock %}
 
 {% block body %}
 
-    {% include '_header.html.twig' %}
+    {% include '_form.html.twig' %}
 
-    {{ form_start(form) }}
-    {{ form_widget(form) }}
-    <input type=\"submit\" />
-    {{ form_end(form) }}
 {% endblock %}", "hideouts/addHideout.html.twig", "/Users/paulfaguet/Desktop/FBI_APP/templates/hideouts/addHideout.html.twig");
     }
 }

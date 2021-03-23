@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Skills;
 use App\Form\AddSkillType;
+use App\Repository\ContactsRepository;
 use App\Repository\SkillsRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -70,5 +71,23 @@ class SkillsController extends AbstractController
             'skill' => $skill,
             'form' => $form->createView(),
         ]);
+    }
+
+    /**
+     * @Route ("/skills/{id}/delete", name="skill_delete", methods={"GET"})
+     */
+    public function deleteContact(int $id, SkillsRepository $skillsRepository): Response
+    {
+        $entityManager = $this->getDoctrine()->getManager();
+
+        $skill = $skillsRepository->find($id);
+        if (!$skill) {
+            return $this->redirectToRoute('skills_index');
+        }
+
+        $entityManager->remove($skill);
+        $entityManager->flush();
+
+        return $this->redirectToRoute('skills_index');
     }
 }

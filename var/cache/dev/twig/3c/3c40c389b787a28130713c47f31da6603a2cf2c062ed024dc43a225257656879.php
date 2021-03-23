@@ -135,7 +135,10 @@ class __TwigTemplate_de8b9bc42cb53fda64761cdcbf81d437b97d76cf8361dde4d880fcb27c4
         echo "</td>
         </tr>
         <tr>
-            <th>Skills</th>
+            <th><a href=\"";
+        // line 33
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("skills_index");
+        echo "\">Skills</a></th>
             <td>
                 ";
         // line 35
@@ -143,35 +146,40 @@ class __TwigTemplate_de8b9bc42cb53fda64761cdcbf81d437b97d76cf8361dde4d880fcb27c4
         $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["agent"]) || array_key_exists("agent", $context) ? $context["agent"] : (function () { throw new RuntimeError('Variable "agent" does not exist.', 35, $this->source); })()), "skills", [], "any", false, false, false, 35));
         foreach ($context['_seq'] as $context["_key"] => $context["skill"]) {
             // line 36
-            echo "                    ";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["skill"], "name", [], "any", false, false, false, 36), "html", null, true);
+            echo "                <a href=\"";
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("skill_details", ["id" => twig_get_attribute($this->env, $this->source, $context["skill"], "id", [], "any", false, false, false, 36)]), "html", null, true);
+            echo "\">
+                    ";
+            // line 37
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["skill"], "name", [], "any", false, false, false, 37), "html", null, true);
             echo " <br>
+                </a>
                 ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['skill'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 38
+        // line 40
         echo "            </td>
         </tr>
         <tr>
             <th><a href=\"";
-        // line 41
+        // line 43
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app.home");
         echo "\">Missions</a></th>
             <td>
                 ";
-        // line 43
+        // line 45
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["agent"]) || array_key_exists("agent", $context) ? $context["agent"] : (function () { throw new RuntimeError('Variable "agent" does not exist.', 43, $this->source); })()), "missions", [], "any", false, false, false, 43));
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["agent"]) || array_key_exists("agent", $context) ? $context["agent"] : (function () { throw new RuntimeError('Variable "agent" does not exist.', 45, $this->source); })()), "missions", [], "any", false, false, false, 45));
         foreach ($context['_seq'] as $context["_key"] => $context["mission"]) {
-            // line 44
+            // line 46
             echo "                        <a href=\"";
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("mission_details", ["id" => twig_get_attribute($this->env, $this->source, $context["mission"], "id", [], "any", false, false, false, 44)]), "html", null, true);
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("mission_details", ["id" => twig_get_attribute($this->env, $this->source, $context["mission"], "id", [], "any", false, false, false, 46)]), "html", null, true);
             echo "\">
                             ";
-            // line 45
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["mission"], "title", [], "any", false, false, false, 45), "html", null, true);
+            // line 47
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["mission"], "title", [], "any", false, false, false, 47), "html", null, true);
             echo " <br>
                         </a>
                 ";
@@ -179,14 +187,14 @@ class __TwigTemplate_de8b9bc42cb53fda64761cdcbf81d437b97d76cf8361dde4d880fcb27c4
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['mission'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 48
+        // line 50
         echo "            </td>
         </tr>
         </tbody>
     </table>
     <button class=\"btn btn-md btn-primary mx-5 mb-5\">
         <a href=\"";
-        // line 53
+        // line 55
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
         echo "\" style=\"color: white; text-decoration: none\">
             Sign in
@@ -194,10 +202,10 @@ class __TwigTemplate_de8b9bc42cb53fda64761cdcbf81d437b97d76cf8361dde4d880fcb27c4
     </button>
 
     ";
-        // line 59
+        // line 61
         echo "    <button class=\"btn btn-md btn-success mr-5 mb-5\">
         <a href=\"";
-        // line 60
+        // line 62
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("agent_add");
         echo "\" style=\"color: white; text-decoration: none\">
             Add an agent
@@ -205,23 +213,23 @@ class __TwigTemplate_de8b9bc42cb53fda64761cdcbf81d437b97d76cf8361dde4d880fcb27c4
     </button>
     <button class=\"btn btn-md btn-warning mx-1 mb-5\">
         <a href=\"";
-        // line 65
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("agent_update", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["agent"]) || array_key_exists("agent", $context) ? $context["agent"] : (function () { throw new RuntimeError('Variable "agent" does not exist.', 65, $this->source); })()), "id", [], "any", false, false, false, 65)]), "html", null, true);
+        // line 67
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("agent_update", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["agent"]) || array_key_exists("agent", $context) ? $context["agent"] : (function () { throw new RuntimeError('Variable "agent" does not exist.', 67, $this->source); })()), "id", [], "any", false, false, false, 67)]), "html", null, true);
         echo "\" style=\"color: white; text-decoration: none\">
             Edit \"";
-        // line 66
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["agent"]) || array_key_exists("agent", $context) ? $context["agent"] : (function () { throw new RuntimeError('Variable "agent" does not exist.', 66, $this->source); })()), "codeName", [], "any", false, false, false, 66), "html", null, true);
+        // line 68
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["agent"]) || array_key_exists("agent", $context) ? $context["agent"] : (function () { throw new RuntimeError('Variable "agent" does not exist.', 68, $this->source); })()), "codeName", [], "any", false, false, false, 68), "html", null, true);
         echo "\"
         </a>
     </button>
     <button class=\"btn btn-md btn-danger mx-1 mb-5\">
         <a href=\"";
-        // line 70
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("agent_update", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["agent"]) || array_key_exists("agent", $context) ? $context["agent"] : (function () { throw new RuntimeError('Variable "agent" does not exist.', 70, $this->source); })()), "id", [], "any", false, false, false, 70)]), "html", null, true);
+        // line 72
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("agent_delete", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["agent"]) || array_key_exists("agent", $context) ? $context["agent"] : (function () { throw new RuntimeError('Variable "agent" does not exist.', 72, $this->source); })()), "id", [], "any", false, false, false, 72)]), "html", null, true);
         echo "\" style=\"color: white; text-decoration: none\">
             Delete \"";
-        // line 71
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["agent"]) || array_key_exists("agent", $context) ? $context["agent"] : (function () { throw new RuntimeError('Variable "agent" does not exist.', 71, $this->source); })()), "codeName", [], "any", false, false, false, 71), "html", null, true);
+        // line 73
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["agent"]) || array_key_exists("agent", $context) ? $context["agent"] : (function () { throw new RuntimeError('Variable "agent" does not exist.', 73, $this->source); })()), "codeName", [], "any", false, false, false, 73), "html", null, true);
         echo "\"
         </a>
     </button>
@@ -246,7 +254,7 @@ class __TwigTemplate_de8b9bc42cb53fda64761cdcbf81d437b97d76cf8361dde4d880fcb27c4
 
     public function getDebugInfo()
     {
-        return array (  224 => 71,  220 => 70,  213 => 66,  209 => 65,  201 => 60,  198 => 59,  190 => 53,  183 => 48,  174 => 45,  169 => 44,  165 => 43,  160 => 41,  155 => 38,  146 => 36,  142 => 35,  134 => 30,  127 => 26,  120 => 22,  113 => 18,  100 => 12,  97 => 11,  95 => 10,  92 => 9,  82 => 8,  69 => 5,  59 => 4,  36 => 1,);
+        return array (  232 => 73,  228 => 72,  221 => 68,  217 => 67,  209 => 62,  206 => 61,  198 => 55,  191 => 50,  182 => 47,  177 => 46,  173 => 45,  168 => 43,  163 => 40,  154 => 37,  149 => 36,  145 => 35,  140 => 33,  134 => 30,  127 => 26,  120 => 22,  113 => 18,  100 => 12,  97 => 11,  95 => 10,  92 => 9,  82 => 8,  69 => 5,  59 => 4,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -283,10 +291,12 @@ class __TwigTemplate_de8b9bc42cb53fda64761cdcbf81d437b97d76cf8361dde4d880fcb27c4
             <td>{{ agent.nationality }}</td>
         </tr>
         <tr>
-            <th>Skills</th>
+            <th><a href=\"{{ path('skills_index') }}\">Skills</a></th>
             <td>
                 {% for skill in agent.skills %}
+                <a href=\"{{ path('skill_details', {'id': skill.id}) }}\">
                     {{ skill.name }} <br>
+                </a>
                 {% endfor %}
             </td>
         </tr>
@@ -320,7 +330,7 @@ class __TwigTemplate_de8b9bc42cb53fda64761cdcbf81d437b97d76cf8361dde4d880fcb27c4
         </a>
     </button>
     <button class=\"btn btn-md btn-danger mx-1 mb-5\">
-        <a href=\"{{ path('agent_update', {'id': agent.id}) }}\" style=\"color: white; text-decoration: none\">
+        <a href=\"{{ path('agent_delete', {'id': agent.id}) }}\" style=\"color: white; text-decoration: none\">
             Delete \"{{ agent.codeName }}\"
         </a>
     </button>

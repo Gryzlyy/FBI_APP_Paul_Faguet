@@ -209,7 +209,7 @@ class __TwigTemplate_7d88fc321d329ed6ec17e968019fae867026db02058beef8e05f98db1c0
     <button class=\"btn btn-md btn-danger mx-1 mb-5\">
         <a href=\"";
         // line 64
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("skill_update", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["skill"]) || array_key_exists("skill", $context) ? $context["skill"] : (function () { throw new RuntimeError('Variable "skill" does not exist.', 64, $this->source); })()), "id", [], "any", false, false, false, 64)]), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("skill_delete", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["skill"]) || array_key_exists("skill", $context) ? $context["skill"] : (function () { throw new RuntimeError('Variable "skill" does not exist.', 64, $this->source); })()), "id", [], "any", false, false, false, 64)]), "html", null, true);
         echo "\" style=\"color: white; text-decoration: none\">
             Delete \"";
         // line 65
@@ -306,7 +306,7 @@ class __TwigTemplate_7d88fc321d329ed6ec17e968019fae867026db02058beef8e05f98db1c0
         </a>
     </button>
     <button class=\"btn btn-md btn-danger mx-1 mb-5\">
-        <a href=\"{{ path('skill_update', {'id': skill.id}) }}\" style=\"color: white; text-decoration: none\">
+        <a href=\"{{ path('skill_delete', {'id': skill.id}) }}\" style=\"color: white; text-decoration: none\">
             Delete \"{{ skill.name }}\"
         </a>
     </button>

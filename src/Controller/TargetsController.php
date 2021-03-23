@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Targets;
 use App\Form\AddTargetType;
+use App\Repository\ContactsRepository;
 use App\Repository\TargetsRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -70,5 +71,23 @@ class TargetsController extends AbstractController
             'target' => $target,
             'form' => $form->createView(),
         ]);
+    }
+
+    /**
+     * @Route ("/targets/{id}/delete", name="target_delete", methods={"GET"})
+     */
+    public function deleteContact(int $id, TargetsRepository $targetsRepository): Response
+    {
+        $entityManager = $this->getDoctrine()->getManager();
+
+        $target = $targetsRepository->find($id);
+        if (!$target) {
+            return $this->redirectToRoute('targets_index');
+        }
+
+        $entityManager->remove($target);
+        $entityManager->flush();
+
+        return $this->redirectToRoute('targets_index');
     }
 }
