@@ -16,14 +16,17 @@ return [
         '/agents' => [[['_route' => 'agents_index', '_controller' => 'App\\Controller\\AgentsController::index'], null, null, null, false, false, null]],
         '/agents-add' => [[['_route' => 'agent_add', '_controller' => 'App\\Controller\\AgentsController::addAgent'], null, null, null, false, false, null]],
         '/contacts' => [[['_route' => 'contacts_index', '_controller' => 'App\\Controller\\ContactsController::index'], null, null, null, false, false, null]],
-        '/contacts-add' => [[['_route' => 'contact_add', '_controller' => 'App\\Controller\\ContactsController::addSkill'], null, null, null, false, false, null]],
+        '/contacts-add' => [[['_route' => 'contact_add', '_controller' => 'App\\Controller\\ContactsController::addContact'], null, null, null, false, false, null]],
         '/hideouts' => [[['_route' => 'hideouts_index', '_controller' => 'App\\Controller\\HideoutsController::index'], null, null, null, false, false, null]],
+        '/hideouts-add' => [[['_route' => 'hideout_add', '_controller' => 'App\\Controller\\HideoutsController::addSkill'], null, null, null, false, false, null]],
         '/' => [[['_route' => 'app.home', '_controller' => 'App\\Controller\\MissionsController::index'], null, null, null, false, false, null]],
+        '/missions-add' => [[['_route' => 'mission_add', '_controller' => 'App\\Controller\\MissionsController::addSkill'], null, null, null, false, false, null]],
         '/login' => [[['_route' => 'app_login', '_controller' => 'App\\Controller\\SecurityController::login'], null, null, null, false, false, null]],
         '/logout' => [[['_route' => 'app_logout', '_controller' => 'App\\Controller\\SecurityController::logout'], null, null, null, false, false, null]],
         '/skills' => [[['_route' => 'skills_index', '_controller' => 'App\\Controller\\SkillsController::index'], null, null, null, false, false, null]],
         '/skills-add' => [[['_route' => 'skill_add', '_controller' => 'App\\Controller\\SkillsController::addSkill'], null, null, null, false, false, null]],
         '/targets' => [[['_route' => 'targets_index', '_controller' => 'App\\Controller\\TargetsController::index'], null, null, null, false, false, null]],
+        '/targets-add' => [[['_route' => 'target_add', '_controller' => 'App\\Controller\\TargetsController::addTarget'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'

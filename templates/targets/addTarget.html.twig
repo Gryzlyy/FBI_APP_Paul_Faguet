@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    New Target
+{% endblock %}
+
+{% block body %}
+
+    {% include '_header.html.twig' %}
+
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    <input type="submit" />
+    {{ form_end(form) }}
+{% endblock %}

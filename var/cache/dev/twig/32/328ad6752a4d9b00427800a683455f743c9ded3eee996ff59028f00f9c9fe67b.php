@@ -163,7 +163,7 @@ class __TwigTemplate_cf3368b43a4bdbdc346f0141e7c64db6c25e5b91696f27f96673d85dd14
         echo "    <button class=\"btn btn-md btn-success mx-2\">
         <a href=\"";
         // line 62
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("hideout_add");
         echo "\" style=\"color: white; text-decoration: none\">
             Add an hideout
         </a>
@@ -258,7 +258,7 @@ class __TwigTemplate_cf3368b43a4bdbdc346f0141e7c64db6c25e5b91696f27f96673d85dd14
 
     {#  {% if is_granted('ROLE_ADMIN') %} #}
     <button class=\"btn btn-md btn-success mx-2\">
-        <a href=\"{{ path('app_login') }}\" style=\"color: white; text-decoration: none\">
+        <a href=\"{{ path('hideout_add') }}\" style=\"color: white; text-decoration: none\">
             Add an hideout
         </a>
     </button>

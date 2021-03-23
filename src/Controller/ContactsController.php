@@ -33,7 +33,7 @@ class ContactsController extends AbstractController
     /**
      * @Route ("/contacts-add", name="contact_add")
      */
-    public function addSkill(Request $request): Response
+    public function addContact(Request $request): Response
     {
         $contact = new Contacts();
         $form = $this->createForm(AddContactType::class, $contact);

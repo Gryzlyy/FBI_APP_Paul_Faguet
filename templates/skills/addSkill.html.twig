@@ -8,23 +8,8 @@
 
     {% include '_header.html.twig' %}
 
-    <div class="form-group m-5 border" style="max-width: 50%">
-        {{ form_start(form) }}
-        <div class="form-control" style="border: none">
-            {{ form_label(form.name) }}
-            {{ form(form.name) }}
-        </div>
-        <div class="form-control" style="border: none">
-            {{ form_label(form.description) }}
-            {{ form(form.description) }}
-        </div>
-        <div class="form-control" style="border: none">
-            {{ form(form.agents) }}
-        </div>
-        <div class="m-4">
-            {{ form_widget(form) }}
-            <input type="submit" />
-            {{ form_end(form) }}
-        </div>
-    </div>
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    <input type="submit" />
+    {{ form_end(form) }}
 {% endblock %}

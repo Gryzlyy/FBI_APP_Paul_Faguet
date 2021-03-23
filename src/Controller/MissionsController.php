@@ -3,8 +3,10 @@
 namespace App\Controller;
 
 use App\Entity\Missions;
+use App\Form\AddMissionType;
 use App\Repository\MissionsRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -28,21 +30,25 @@ class MissionsController extends AbstractController
         ]);
     }
 
-   /* public function incrementation(): Response
+    /**
+     * @Route ("/missions-add", name="mission_add")
+     */
+    public function addSkill(Request $request): Response
     {
-        $mission1 = new Missions();
-        $em = $this->getDoctrine()->getManager();
+        $mission = new Missions();
+        $form = $this->createForm(AddMissionType::class, $mission);
+        $form->handleRequest($request);
 
-        $mission1->setTitle('Desert Storm');
-        $mission1->setDescription('lorem ispum dorlor sit amet consegur y seguimos a la patin');
-        $mission1->setType('Spying');
-        $mission1->setCountry('Afghanistan');
-        $mission1->setStartDate('27/01/2020');
-        $mission1->setEndDate('30/05/2021');
-        $mission1->setSkills('');
-        $mission1->setHideouts('');
+        if ($form->isSubmitted() && $form->isValid()) {
+            $entityManager = $this->getDoctrine()->getManager();
+            $entityManager->persist($mission);
+            $entityManager->flush();
 
-        $em->persist($mission1);
-        $em->flush();
-    } */
+            return $this->redirectToRoute('app.home');
+        }
+
+        return $this->render('missions/addMission.html.twig', [
+            'form' => $form->createView(),
+        ]);
+    }
 }

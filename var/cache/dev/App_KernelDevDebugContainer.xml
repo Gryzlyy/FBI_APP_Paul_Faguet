@@ -355,7 +355,16 @@
     <service id="App\Form\AddContactType" class="App\Form\AddContactType" autowire="true" autoconfigure="true">
       <tag name="form.type"/>
     </service>
+    <service id="App\Form\AddHideoutType" class="App\Form\AddHideoutType" autowire="true" autoconfigure="true">
+      <tag name="form.type"/>
+    </service>
+    <service id="App\Form\AddMissionType" class="App\Form\AddMissionType" autowire="true" autoconfigure="true">
+      <tag name="form.type"/>
+    </service>
     <service id="App\Form\AddSkillType" class="App\Form\AddSkillType" autowire="true" autoconfigure="true">
+      <tag name="form.type"/>
+    </service>
+    <service id="App\Form\AddTargetType" class="App\Form\AddTargetType" autowire="true" autoconfigure="true">
       <tag name="form.type"/>
     </service>
     <service id="App\Repository\AdminRepository" class="App\Repository\AdminRepository" autowire="true" autoconfigure="true">
@@ -806,7 +815,10 @@
       <argument type="collection">
         <argument>App\Form\AddAgentsType</argument>
         <argument>App\Form\AddContactType</argument>
+        <argument>App\Form\AddHideoutType</argument>
+        <argument>App\Form\AddMissionType</argument>
         <argument>App\Form\AddSkillType</argument>
+        <argument>App\Form\AddTargetType</argument>
         <argument>Symfony\Component\Form\Extension\Core\Type\FormType</argument>
         <argument>Symfony\Component\Form\Extension\Core\Type\ChoiceType</argument>
         <argument>Symfony\Component\Form\Extension\Core\Type\FileType</argument>
@@ -1162,7 +1174,7 @@
       <argument type="service" id="form.registry"/>
     </service>
     <service id="form.extension" class="Symfony\Component\Form\Extension\DependencyInjection\DependencyInjectionExtension">
-      <argument type="service" id=".service_locator.MYk4kuU"/>
+      <argument type="service" id=".service_locator.whyXOdn"/>
       <argument type="collection">
         <argument key="Symfony\Component\Form\Extension\Core\Type\FormType" type="iterator">
           <argument type="service" id="form.type_extension.form.transformation_failure_handling"/>
@@ -4136,8 +4148,14 @@
     <service id=".abstract.instanceof.App\Form\AddAgentsType" class="App\Form\AddAgentsType" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\AddContactType" class="App\Form\AddContactType" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Form\AddContactType" class="App\Form\AddContactType" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\AddHideoutType" class="App\Form\AddHideoutType" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Form\AddHideoutType" class="App\Form\AddHideoutType" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\AddMissionType" class="App\Form\AddMissionType" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Form\AddMissionType" class="App\Form\AddMissionType" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\AddSkillType" class="App\Form\AddSkillType" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Form\AddSkillType" class="App\Form\AddSkillType" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\AddTargetType" class="App\Form\AddTargetType" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Form\AddTargetType" class="App\Form\AddTargetType" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\AdminRepository" class="App\Repository\AdminRepository" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Repository\AdminRepository" class="App\Repository\AdminRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\AgentsRepository" class="App\Repository\AgentsRepository" autowire="true" abstract="true"/>
@@ -4607,12 +4625,15 @@
       <argument type="service" id="debug.argument_resolver.not_tagged_controller.inner"/>
       <argument type="service" id="debug.stopwatch"/>
     </service>
-    <service id=".service_locator.MYk4kuU" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.whyXOdn" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Form\AddAgentsType" type="service" id="App\Form\AddAgentsType"/>
         <argument key="App\Form\AddContactType" type="service" id="App\Form\AddContactType"/>
+        <argument key="App\Form\AddHideoutType" type="service" id="App\Form\AddHideoutType"/>
+        <argument key="App\Form\AddMissionType" type="service" id="App\Form\AddMissionType"/>
         <argument key="App\Form\AddSkillType" type="service" id="App\Form\AddSkillType"/>
+        <argument key="App\Form\AddTargetType" type="service" id="App\Form\AddTargetType"/>
         <argument key="Symfony\Bridge\Doctrine\Form\Type\EntityType" type="service" id="form.type.entity"/>
         <argument key="Symfony\Component\Form\Extension\Core\Type\ChoiceType" type="service" id="form.type.choice"/>
         <argument key="Symfony\Component\Form\Extension\Core\Type\ColorType" type="service" id="form.type.color"/>
