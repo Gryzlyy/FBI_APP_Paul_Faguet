@@ -42,7 +42,7 @@
                 <td>{{ mission.endDate }}</td>
             </tr>
             <tr>
-                <th>Required skills</th>
+                <th><a href="{{ path('skills_index') }}" style="color: black">Skills</a> required</th>
                 <td>{{ mission.skills.name }}</td>
             </tr>
             <tr>
@@ -78,27 +78,28 @@
             </tr>
         </tbody>
     </table>
+
     <button class="btn btn-md btn-primary mx-5 mb-5">
         <a href="{{ path('app_login') }}" style="color: white; text-decoration: none">
             Sign in
         </a>
     </button>
 
-    {#  {% if is_granted('ROLE_ADMIN') %} #}
-    <button class="btn btn-md btn-success mx-2 mb-5">
-        <a href="{{ path('mission_add') }}" style="color: white; text-decoration: none">
-            Add a mission
-        </a>
-    </button>
-    <button class="btn btn-md btn-warning mx-1 mb-5">
-        <a href="{{ path('mission_update', {'id': mission.id}) }}" style="color: white; text-decoration: none">
-            Edit {{ mission.title }}
-        </a>
-    </button>
-    <button class="btn btn-md btn-danger mx-1 mb-5">
-        <a href="{{ path('mission_delete', {'id': mission.id}) }}" style="color: white; text-decoration: none">
-            Delete {{ mission.title }}
-        </a>
-    </button>
-    {#  {% endif %}#}
+    {% if is_granted('ROLE_ADMIN') %}
+        <button class="btn btn-md btn-success mx-2 mb-5">
+            <a href="{{ path('mission_add') }}" style="color: white; text-decoration: none">
+                Add a mission
+            </a>
+        </button>
+        <button class="btn btn-md btn-warning mx-1 mb-5">
+            <a href="{{ path('mission_update', {'id': mission.id}) }}" style="color: white; text-decoration: none">
+                Edit {{ mission.title }}
+            </a>
+        </button>
+        <button class="btn btn-md btn-danger mx-1 mb-5">
+            <a href="{{ path('mission_delete', {'id': mission.id}) }}" style="color: white; text-decoration: none">
+                Delete {{ mission.title }}
+            </a>
+        </button>
+    {% endif %}
 {% endblock %}

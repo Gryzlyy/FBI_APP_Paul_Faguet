@@ -34,7 +34,7 @@
             <td>{{ contact.birthDate }}</td>
         </tr>
         <tr>
-            <th><a href="{{ path('app.home') }}">Missions</a></th>
+            <th><a href="{{ path('app.home') }}" style="color: black">Missions</a></th>
             <td>
                 {% for mission in contact.missions %}
                         <a href="{{ path('mission_details', {'id': mission.id}) }}">
@@ -51,7 +51,7 @@
         </a>
     </button>
 
-    {#  {% if is_granted('ROLE_ADMIN') %} #}
+    {% if is_granted('ROLE_ADMIN') %}
     <button class="btn btn-md btn-success mx-2 mb-5">
         <a href="{{ path('contact_add') }}" style="color: white; text-decoration: none">
             Add a contact
@@ -67,5 +67,5 @@
             Delete "{{ contact.codeName }}"
         </a>
     </button>
-    {#  {% endif %}#}
+    {% endif %}
 {% endblock %}

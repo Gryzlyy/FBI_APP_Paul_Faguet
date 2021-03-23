@@ -127,7 +127,7 @@ class __TwigTemplate_94723f517d493f049bfa3777e81868ad0008670e5f04520030796d1112b
             <th><a href=\"";
         // line 29
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app.home");
-        echo "\">Missions</a></th>
+        echo "\" style=\"color: black\">Missions</a></th>
             <td>
                 ";
         // line 31
@@ -163,38 +163,41 @@ class __TwigTemplate_94723f517d493f049bfa3777e81868ad0008670e5f04520030796d1112b
     </button>
 
     ";
-        // line 47
-        echo "    <button class=\"btn btn-md btn-success mx-2 mb-5\">
+        // line 46
+        if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_ADMIN")) {
+            // line 47
+            echo "    <button class=\"btn btn-md btn-success mx-2 mb-5\">
         <a href=\"";
-        // line 48
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("hideout_add");
-        echo "\" style=\"color: white; text-decoration: none\">
+            // line 48
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("hideout_add");
+            echo "\" style=\"color: white; text-decoration: none\">
             Add an hideout
         </a>
     </button>
     <button class=\"btn btn-md btn-warning mx-1 mb-5\">
         <a href=\"";
-        // line 53
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("hideout_update", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["hideout"]) || array_key_exists("hideout", $context) ? $context["hideout"] : (function () { throw new RuntimeError('Variable "hideout" does not exist.', 53, $this->source); })()), "id", [], "any", false, false, false, 53)]), "html", null, true);
-        echo "\" style=\"color: white; text-decoration: none\">
+            // line 53
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("hideout_update", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["hideout"]) || array_key_exists("hideout", $context) ? $context["hideout"] : (function () { throw new RuntimeError('Variable "hideout" does not exist.', 53, $this->source); })()), "id", [], "any", false, false, false, 53)]), "html", null, true);
+            echo "\" style=\"color: white; text-decoration: none\">
             Edit \"";
-        // line 54
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["hideout"]) || array_key_exists("hideout", $context) ? $context["hideout"] : (function () { throw new RuntimeError('Variable "hideout" does not exist.', 54, $this->source); })()), "address", [], "any", false, false, false, 54), "html", null, true);
-        echo "\"
+            // line 54
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["hideout"]) || array_key_exists("hideout", $context) ? $context["hideout"] : (function () { throw new RuntimeError('Variable "hideout" does not exist.', 54, $this->source); })()), "address", [], "any", false, false, false, 54), "html", null, true);
+            echo "\"
         </a>
     </button>
     <button class=\"btn btn-md btn-danger mx-1 mb-5\">
         <a href=\"";
-        // line 58
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("hideout_delete", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["hideout"]) || array_key_exists("hideout", $context) ? $context["hideout"] : (function () { throw new RuntimeError('Variable "hideout" does not exist.', 58, $this->source); })()), "id", [], "any", false, false, false, 58)]), "html", null, true);
-        echo "\" style=\"color: white; text-decoration: none\">
+            // line 58
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("hideout_delete", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["hideout"]) || array_key_exists("hideout", $context) ? $context["hideout"] : (function () { throw new RuntimeError('Variable "hideout" does not exist.', 58, $this->source); })()), "id", [], "any", false, false, false, 58)]), "html", null, true);
+            echo "\" style=\"color: white; text-decoration: none\">
             Delete \"";
-        // line 59
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["hideout"]) || array_key_exists("hideout", $context) ? $context["hideout"] : (function () { throw new RuntimeError('Variable "hideout" does not exist.', 59, $this->source); })()), "address", [], "any", false, false, false, 59), "html", null, true);
-        echo "\"
+            // line 59
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["hideout"]) || array_key_exists("hideout", $context) ? $context["hideout"] : (function () { throw new RuntimeError('Variable "hideout" does not exist.', 59, $this->source); })()), "address", [], "any", false, false, false, 59), "html", null, true);
+            echo "\"
         </a>
     </button>
     ";
+        }
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -215,7 +218,7 @@ class __TwigTemplate_94723f517d493f049bfa3777e81868ad0008670e5f04520030796d1112b
 
     public function getDebugInfo()
     {
-        return array (  193 => 59,  189 => 58,  182 => 54,  178 => 53,  170 => 48,  167 => 47,  159 => 41,  152 => 36,  143 => 33,  138 => 32,  134 => 31,  129 => 29,  123 => 26,  116 => 22,  109 => 18,  100 => 12,  97 => 11,  95 => 10,  92 => 9,  82 => 8,  69 => 5,  59 => 4,  36 => 1,);
+        return array (  195 => 59,  191 => 58,  184 => 54,  180 => 53,  172 => 48,  169 => 47,  167 => 46,  159 => 41,  152 => 36,  143 => 33,  138 => 32,  134 => 31,  129 => 29,  123 => 26,  116 => 22,  109 => 18,  100 => 12,  97 => 11,  95 => 10,  92 => 9,  82 => 8,  69 => 5,  59 => 4,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -248,7 +251,7 @@ class __TwigTemplate_94723f517d493f049bfa3777e81868ad0008670e5f04520030796d1112b
             <td>{{ hideout.address }}</td>
         </tr>
         <tr>
-            <th><a href=\"{{ path('app.home') }}\">Missions</a></th>
+            <th><a href=\"{{ path('app.home') }}\" style=\"color: black\">Missions</a></th>
             <td>
                 {% for mission in hideout.missions %}
                         <a href=\"{{ path('mission_details', {'id': mission.id}) }}\">
@@ -265,7 +268,7 @@ class __TwigTemplate_94723f517d493f049bfa3777e81868ad0008670e5f04520030796d1112b
         </a>
     </button>
 
-    {#  {% if is_granted('ROLE_ADMIN') %} #}
+    {% if is_granted('ROLE_ADMIN') %}
     <button class=\"btn btn-md btn-success mx-2 mb-5\">
         <a href=\"{{ path('hideout_add') }}\" style=\"color: white; text-decoration: none\">
             Add an hideout
@@ -281,7 +284,7 @@ class __TwigTemplate_94723f517d493f049bfa3777e81868ad0008670e5f04520030796d1112b
             Delete \"{{ hideout.address }}\"
         </a>
     </button>
-    {#  {% endif %}#}
+    {% endif %}
 {% endblock %}", "hideouts/showHideout.html.twig", "/Users/paulfaguet/Desktop/FBI_APP/templates/hideouts/showHideout.html.twig");
     }
 }

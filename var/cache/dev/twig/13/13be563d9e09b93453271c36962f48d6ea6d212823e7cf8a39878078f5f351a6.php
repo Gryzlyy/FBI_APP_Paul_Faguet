@@ -105,10 +105,19 @@ class __TwigTemplate_53fac5ca733b91c52b79fcdefe6d441d1669585473337aa1fa51bf428a1
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("skills_index");
         echo "\"> Skills </a>
                 </li>
-
             </ul>
         </div>
     </nav>
+    <p class=\"mx-5\" style=\"font-size: 0.8em; color: limegreen\">
+        ";
+        // line 30
+        if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_ADMIN")) {
+            // line 31
+            echo "             Connected as an administrator
+        ";
+        }
+        // line 33
+        echo "    </p>
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -130,7 +139,7 @@ class __TwigTemplate_53fac5ca733b91c52b79fcdefe6d441d1669585473337aa1fa51bf428a1
 
     public function getDebugInfo()
     {
-        return array (  105 => 24,  99 => 21,  93 => 18,  87 => 15,  81 => 12,  71 => 5,  68 => 4,  58 => 3,  35 => 1,);
+        return array (  120 => 33,  116 => 31,  114 => 30,  105 => 24,  99 => 21,  93 => 18,  87 => 15,  81 => 12,  71 => 5,  68 => 4,  58 => 3,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -160,10 +169,14 @@ class __TwigTemplate_53fac5ca733b91c52b79fcdefe6d441d1669585473337aa1fa51bf428a1
                 <li class=\"nav-item\">
                     <a class=\"nav-link\" href=\"{{ path('skills_index') }}\"> Skills </a>
                 </li>
-
             </ul>
         </div>
     </nav>
+    <p class=\"mx-5\" style=\"font-size: 0.8em; color: limegreen\">
+        {% if is_granted('ROLE_ADMIN') %}
+             Connected as an administrator
+        {% endif %}
+    </p>
 {% endblock %}", "_header.html.twig", "/Users/paulfaguet/Desktop/FBI_APP/templates/_header.html.twig");
     }
 }

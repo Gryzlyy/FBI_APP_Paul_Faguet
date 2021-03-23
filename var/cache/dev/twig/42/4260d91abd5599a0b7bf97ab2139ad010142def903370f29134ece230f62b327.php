@@ -124,60 +124,86 @@ class __TwigTemplate_2963f8a42b2f49f96e2485deba811d9da47a95d5f6685c9c986b4b9a8d6
             // line 33
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["mission"], "id", [], "any", false, false, false, 33), "html", null, true);
             echo "</th>
-                    <td>";
-            // line 34
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["mission"], "status", [], "any", false, false, false, 34), "html", null, true);
-            echo "</td>
-                    <td>";
+                    <td style=
+                        ";
             // line 35
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["mission"], "title", [], "any", false, false, false, 35), "html", null, true);
+            if ((twig_get_attribute($this->env, $this->source, $context["mission"], "status", [], "any", false, false, false, 35) == "Done")) {
+                // line 36
+                echo "                        \"background-color: lightgreen;\"
+                            ";
+            } elseif ((twig_get_attribute($this->env, $this->source,             // line 37
+$context["mission"], "status", [], "any", false, false, false, 37) == "Stand by")) {
+                // line 38
+                echo "                                \"background-color: gold;\"
+                            ";
+            } elseif ((twig_get_attribute($this->env, $this->source,             // line 39
+$context["mission"], "status", [], "any", false, false, false, 39) == "In progress")) {
+                // line 40
+                echo "                                \"background-color: orange;\"
+                            ";
+            } elseif ((twig_get_attribute($this->env, $this->source,             // line 41
+$context["mission"], "status", [], "any", false, false, false, 41) == "In preparation")) {
+                // line 42
+                echo "                                \"background-color: lightgray;\"
+                        ";
+            }
+            // line 44
+            echo "                            >";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["mission"], "status", [], "any", false, false, false, 44), "html", null, true);
             echo "</td>
                     <td>";
-            // line 36
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["mission"], "country", [], "any", false, false, false, 36), "html", null, true);
+            // line 45
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["mission"], "title", [], "any", false, false, false, 45), "html", null, true);
             echo "</td>
                     <td>";
-            // line 37
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["mission"], "type", [], "any", false, false, false, 37), "html", null, true);
+            // line 46
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["mission"], "country", [], "any", false, false, false, 46), "html", null, true);
+            echo "</td>
+                    <td>";
+            // line 47
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["mission"], "type", [], "any", false, false, false, 47), "html", null, true);
             echo "</td>
                     <td style=\"max-width: 20em\">";
-            // line 38
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["mission"], "description", [], "any", false, false, false, 38), "html", null, true);
+            // line 48
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["mission"], "description", [], "any", false, false, false, 48), "html", null, true);
             echo "</td>
                     <td>";
-            // line 39
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["mission"], "startDate", [], "any", false, false, false, 39), "html", null, true);
+            // line 49
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["mission"], "startDate", [], "any", false, false, false, 49), "html", null, true);
             echo "</td>
                     <td>";
-            // line 40
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["mission"], "endDate", [], "any", false, false, false, 40), "html", null, true);
+            // line 50
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["mission"], "endDate", [], "any", false, false, false, 50), "html", null, true);
             echo "</td>
                     <td>
                         <a href=\"";
-            // line 42
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("mission_details", ["id" => twig_get_attribute($this->env, $this->source, $context["mission"], "id", [], "any", false, false, false, 42)]), "html", null, true);
+            // line 52
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("mission_details", ["id" => twig_get_attribute($this->env, $this->source, $context["mission"], "id", [], "any", false, false, false, 52)]), "html", null, true);
             echo "\" style=\"color: black\">See more</a><br>
                         ";
-            // line 44
-            echo "                        <a href=\"";
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("mission_update", ["id" => twig_get_attribute($this->env, $this->source, $context["mission"], "id", [], "any", false, false, false, 44)]), "html", null, true);
-            echo "\" style=\"color: black; text-decoration: none;\">
-                            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-pencil-square m-2 text-center\" viewBox=\"0 0 16 16\">
-                                <path d=\"M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456l-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z\"/>
-                                <path fill-rule=\"evenodd\" d=\"M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z\"/>
-                            </svg>
-                        </a> <br>
-                        <a href=\"";
-            // line 50
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("mission_delete", ["id" => twig_get_attribute($this->env, $this->source, $context["mission"], "id", [], "any", false, false, false, 50)]), "html", null, true);
-            echo "\" style=\"color: red; text-decoration: none\">
-                            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-trash text-center\" viewBox=\"0 0 16 16\">
-                                <path d=\"M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z\"/>
-                                <path fill-rule=\"evenodd\" d=\"M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z\"/>
-                            </svg>
-                        </a>
+            // line 53
+            if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_ADMIN")) {
+                // line 54
+                echo "                            <a href=\"";
+                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("mission_update", ["id" => twig_get_attribute($this->env, $this->source, $context["mission"], "id", [], "any", false, false, false, 54)]), "html", null, true);
+                echo "\" style=\"color: black; text-decoration: none;\">
+                                <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-pencil-square m-2 text-center\" viewBox=\"0 0 16 16\">
+                                    <path d=\"M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456l-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z\"/>
+                                    <path fill-rule=\"evenodd\" d=\"M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z\"/>
+                                </svg>
+                            </a> <br>
+                            <a href=\"";
+                // line 60
+                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("mission_delete", ["id" => twig_get_attribute($this->env, $this->source, $context["mission"], "id", [], "any", false, false, false, 60)]), "html", null, true);
+                echo "\" style=\"color: red; text-decoration: none\">
+                                <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-trash text-center\" viewBox=\"0 0 16 16\">
+                                    <path d=\"M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z\"/>
+                                    <path fill-rule=\"evenodd\" d=\"M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z\"/>
+                                </svg>
+                            </a>
                         ";
-            // line 57
+            }
+            // line 67
             echo "                    </td>
 
                 </tr>
@@ -187,32 +213,35 @@ class __TwigTemplate_2963f8a42b2f49f96e2485deba811d9da47a95d5f6685c9c986b4b9a8d6
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['mission'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 62
+        // line 72
         echo "
         </tbody>
     </table>
 
     <button class=\"btn btn-md btn-primary mx-4\">
         <a href=\"";
-        // line 67
+        // line 77
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
         echo "\" style=\"color: white; text-decoration: none\">
             Sign in
         </a>
     </button>
 
-";
-        // line 73
-        echo "        <button class=\"btn btn-md btn-success mx-2\">
+  ";
+        // line 82
+        if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_ADMIN")) {
+            // line 83
+            echo "        <button class=\"btn btn-md btn-success mx-2\">
             <a href=\"";
-        // line 74
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("mission_add");
-        echo "\" style=\"color: white; text-decoration: none\">
+            // line 84
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("mission_add");
+            echo "\" style=\"color: white; text-decoration: none\">
                 Add a mission
             </a>
         </button>
-";
-        // line 79
+  ";
+        }
+        // line 89
         echo "
 ";
         
@@ -235,7 +264,7 @@ class __TwigTemplate_2963f8a42b2f49f96e2485deba811d9da47a95d5f6685c9c986b4b9a8d6
 
     public function getDebugInfo()
     {
-        return array (  216 => 79,  209 => 74,  206 => 73,  198 => 67,  191 => 62,  181 => 57,  172 => 50,  162 => 44,  158 => 42,  153 => 40,  149 => 39,  145 => 38,  141 => 37,  137 => 36,  133 => 35,  129 => 34,  125 => 33,  120 => 30,  116 => 29,  95 => 10,  93 => 9,  90 => 8,  80 => 7,  69 => 4,  59 => 3,  36 => 1,);
+        return array (  245 => 89,  237 => 84,  234 => 83,  232 => 82,  224 => 77,  217 => 72,  207 => 67,  197 => 60,  187 => 54,  185 => 53,  181 => 52,  176 => 50,  172 => 49,  168 => 48,  164 => 47,  160 => 46,  156 => 45,  151 => 44,  147 => 42,  145 => 41,  142 => 40,  140 => 39,  137 => 38,  135 => 37,  132 => 36,  130 => 35,  125 => 33,  120 => 30,  116 => 29,  95 => 10,  93 => 9,  90 => 8,  80 => 7,  69 => 4,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -273,7 +302,17 @@ class __TwigTemplate_2963f8a42b2f49f96e2485deba811d9da47a95d5f6685c9c986b4b9a8d6
                 <tr>
 
                     <th scope=\"row\">{{ mission.id }}</th>
-                    <td>{{ mission.status }}</td>
+                    <td style=
+                        {% if mission.status == 'Done' %}
+                        \"background-color: lightgreen;\"
+                            {% elseif mission.status == 'Stand by' %}
+                                \"background-color: gold;\"
+                            {% elseif mission.status == 'In progress' %}
+                                \"background-color: orange;\"
+                            {% elseif mission.status == 'In preparation' %}
+                                \"background-color: lightgray;\"
+                        {% endif %}
+                            >{{ mission.status }}</td>
                     <td>{{ mission.title }}</td>
                     <td>{{ mission.country }}</td>
                     <td>{{ mission.type }}</td>
@@ -282,20 +321,20 @@ class __TwigTemplate_2963f8a42b2f49f96e2485deba811d9da47a95d5f6685c9c986b4b9a8d6
                     <td>{{ mission.endDate }}</td>
                     <td>
                         <a href=\"{{ path('mission_details', {'id': mission.id}) }}\" style=\"color: black\">See more</a><br>
-                        {#  {% if is_granted('ROLE_ADMIN') %} #}
-                        <a href=\"{{ path('mission_update', {'id': mission.id}) }}\" style=\"color: black; text-decoration: none;\">
-                            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-pencil-square m-2 text-center\" viewBox=\"0 0 16 16\">
-                                <path d=\"M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456l-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z\"/>
-                                <path fill-rule=\"evenodd\" d=\"M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z\"/>
-                            </svg>
-                        </a> <br>
-                        <a href=\"{{ path('mission_delete', {'id': mission.id}) }}\" style=\"color: red; text-decoration: none\">
-                            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-trash text-center\" viewBox=\"0 0 16 16\">
-                                <path d=\"M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z\"/>
-                                <path fill-rule=\"evenodd\" d=\"M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z\"/>
-                            </svg>
-                        </a>
-                        {#  {% endif %}#}
+                        {% if is_granted('ROLE_ADMIN') %}
+                            <a href=\"{{ path('mission_update', {'id': mission.id}) }}\" style=\"color: black; text-decoration: none;\">
+                                <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-pencil-square m-2 text-center\" viewBox=\"0 0 16 16\">
+                                    <path d=\"M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456l-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z\"/>
+                                    <path fill-rule=\"evenodd\" d=\"M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z\"/>
+                                </svg>
+                            </a> <br>
+                            <a href=\"{{ path('mission_delete', {'id': mission.id}) }}\" style=\"color: red; text-decoration: none\">
+                                <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-trash text-center\" viewBox=\"0 0 16 16\">
+                                    <path d=\"M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z\"/>
+                                    <path fill-rule=\"evenodd\" d=\"M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z\"/>
+                                </svg>
+                            </a>
+                        {% endif %}
                     </td>
 
                 </tr>
@@ -311,13 +350,13 @@ class __TwigTemplate_2963f8a42b2f49f96e2485deba811d9da47a95d5f6685c9c986b4b9a8d6
         </a>
     </button>
 
-{#  {% if is_granted('ROLE_ADMIN') %} #}
+  {% if is_granted('ROLE_ADMIN') %}
         <button class=\"btn btn-md btn-success mx-2\">
             <a href=\"{{ path('mission_add') }}\" style=\"color: white; text-decoration: none\">
                 Add a mission
             </a>
         </button>
-{#  {% endif %}#}
+  {% endif %}
 
 {% endblock %}
 ", "missions/index.html.twig", "/Users/paulfaguet/Desktop/FBI_APP/templates/missions/index.html.twig");

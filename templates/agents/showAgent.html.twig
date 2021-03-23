@@ -30,7 +30,7 @@
             <td>{{ agent.nationality }}</td>
         </tr>
         <tr>
-            <th><a href="{{ path('skills_index') }}">Skills</a></th>
+            <th><a href="{{ path('skills_index') }}" style="color: black">Skills</a></th>
             <td>
                 {% for skill in agent.skills %}
                 <a href="{{ path('skill_details', {'id': skill.id}) }}">
@@ -40,7 +40,7 @@
             </td>
         </tr>
         <tr>
-            <th><a href="{{ path('app.home') }}">Missions</a></th>
+            <th><a href="{{ path('app.home') }}" style="color: black">Missions</a></th>
             <td>
                 {% for mission in agent.missions %}
                         <a href="{{ path('mission_details', {'id': mission.id}) }}">
@@ -57,7 +57,7 @@
         </a>
     </button>
 
-    {#  {% if is_granted('ROLE_ADMIN') %} #}
+    {% if is_granted('ROLE_ADMIN') %}
     <button class="btn btn-md btn-success mr-5 mb-5">
         <a href="{{ path('agent_add') }}" style="color: white; text-decoration: none">
             Add an agent
@@ -73,5 +73,5 @@
             Delete "{{ agent.codeName }}"
         </a>
     </button>
-    {#  {% endif %}#}
+    {% endif %}
 {% endblock %}

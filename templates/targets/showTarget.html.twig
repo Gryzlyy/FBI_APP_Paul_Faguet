@@ -30,7 +30,7 @@
             <td>{{ target.nationality }}</td>
         </tr>
         <tr>
-            <th><a href="{{ path('app.home') }}">Missions</a></th>
+            <th><a href="{{ path('app.home') }}" style="color: black">Missions</a></th>
             <td>
                 {% for mission in target.missions %}
                         <a href="{{ path('mission_details', {'id': mission.id}) }}">
@@ -47,21 +47,21 @@
         </a>
     </button>
 
-    {#  {% if is_granted('ROLE_ADMIN') %} #}
-    <button class="btn btn-md btn-success mx-2 mb-5">
-        <a href="{{ path('target_add') }}" style="color: white; text-decoration: none">
-            Add a target
-        </a>
-    </button>
-    <button class="btn btn-md btn-warning mx-1 mb-5">
-        <a href="{{ path('target_update', {'id': target.id}) }}" style="color: white; text-decoration: none">
-            Edit "{{ target.codeName }}"
-        </a>
-    </button>
-    <button class="btn btn-md btn-danger mx-1 mb-5">
-        <a href="{{ path('target_delete', {'id': target.id}) }}" style="color: white; text-decoration: none">
-            Delete "{{ target.codeName }}"
-        </a>
-    </button>
-    {#  {% endif %}#}
+    {% if is_granted('ROLE_ADMIN') %}
+        <button class="btn btn-md btn-success mx-2 mb-5">
+            <a href="{{ path('target_add') }}" style="color: white; text-decoration: none">
+                Add a target
+            </a>
+        </button>
+        <button class="btn btn-md btn-warning mx-1 mb-5">
+            <a href="{{ path('target_update', {'id': target.id}) }}" style="color: white; text-decoration: none">
+                Edit "{{ target.codeName }}"
+            </a>
+        </button>
+        <button class="btn btn-md btn-danger mx-1 mb-5">
+            <a href="{{ path('target_delete', {'id': target.id}) }}" style="color: white; text-decoration: none">
+                Delete "{{ target.codeName }}"
+            </a>
+        </button>
+    {% endif %}
 {% endblock %}

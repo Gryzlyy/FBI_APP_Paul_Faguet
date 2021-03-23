@@ -23,8 +23,12 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ path('skills_index') }}"> Skills </a>
                 </li>
-
             </ul>
         </div>
     </nav>
+    <p class="mx-5" style="font-size: 0.8em; color: limegreen">
+        {% if is_granted('ROLE_ADMIN') %}
+             Connected as an administrator
+        {% endif %}
+    </p>
 {% endblock %}

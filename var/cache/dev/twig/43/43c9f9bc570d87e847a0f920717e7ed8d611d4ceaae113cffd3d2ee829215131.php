@@ -152,7 +152,10 @@ class __TwigTemplate_730e4a97d7931ebf88e80c0004e806d495c7337bd21bdd3f49697ac1ae9
         echo "</td>
             </tr>
             <tr>
-                <th>Required skills</th>
+                <th><a href=\"";
+        // line 45
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("skills_index");
+        echo "\" style=\"color: black\">Skills</a> required</th>
                 <td>";
         // line 46
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["mission"]) || array_key_exists("mission", $context) ? $context["mission"] : (function () { throw new RuntimeError('Variable "mission" does not exist.', 46, $this->source); })()), "skills", [], "any", false, false, false, 46), "name", [], "any", false, false, false, 46), "html", null, true);
@@ -246,9 +249,10 @@ class __TwigTemplate_730e4a97d7931ebf88e80c0004e806d495c7337bd21bdd3f49697ac1ae9
             </tr>
         </tbody>
     </table>
+
     <button class=\"btn btn-md btn-primary mx-5 mb-5\">
         <a href=\"";
-        // line 82
+        // line 83
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
         echo "\" style=\"color: white; text-decoration: none\">
             Sign in
@@ -257,37 +261,40 @@ class __TwigTemplate_730e4a97d7931ebf88e80c0004e806d495c7337bd21bdd3f49697ac1ae9
 
     ";
         // line 88
-        echo "    <button class=\"btn btn-md btn-success mx-2 mb-5\">
-        <a href=\"";
-        // line 89
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("mission_add");
-        echo "\" style=\"color: white; text-decoration: none\">
-            Add a mission
-        </a>
-    </button>
-    <button class=\"btn btn-md btn-warning mx-1 mb-5\">
-        <a href=\"";
-        // line 94
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("mission_update", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["mission"]) || array_key_exists("mission", $context) ? $context["mission"] : (function () { throw new RuntimeError('Variable "mission" does not exist.', 94, $this->source); })()), "id", [], "any", false, false, false, 94)]), "html", null, true);
-        echo "\" style=\"color: white; text-decoration: none\">
-            Edit ";
-        // line 95
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["mission"]) || array_key_exists("mission", $context) ? $context["mission"] : (function () { throw new RuntimeError('Variable "mission" does not exist.', 95, $this->source); })()), "title", [], "any", false, false, false, 95), "html", null, true);
-        echo "
-        </a>
-    </button>
-    <button class=\"btn btn-md btn-danger mx-1 mb-5\">
-        <a href=\"";
-        // line 99
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("mission_delete", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["mission"]) || array_key_exists("mission", $context) ? $context["mission"] : (function () { throw new RuntimeError('Variable "mission" does not exist.', 99, $this->source); })()), "id", [], "any", false, false, false, 99)]), "html", null, true);
-        echo "\" style=\"color: white; text-decoration: none\">
-            Delete ";
-        // line 100
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["mission"]) || array_key_exists("mission", $context) ? $context["mission"] : (function () { throw new RuntimeError('Variable "mission" does not exist.', 100, $this->source); })()), "title", [], "any", false, false, false, 100), "html", null, true);
-        echo "
-        </a>
-    </button>
+        if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_ADMIN")) {
+            // line 89
+            echo "        <button class=\"btn btn-md btn-success mx-2 mb-5\">
+            <a href=\"";
+            // line 90
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("mission_add");
+            echo "\" style=\"color: white; text-decoration: none\">
+                Add a mission
+            </a>
+        </button>
+        <button class=\"btn btn-md btn-warning mx-1 mb-5\">
+            <a href=\"";
+            // line 95
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("mission_update", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["mission"]) || array_key_exists("mission", $context) ? $context["mission"] : (function () { throw new RuntimeError('Variable "mission" does not exist.', 95, $this->source); })()), "id", [], "any", false, false, false, 95)]), "html", null, true);
+            echo "\" style=\"color: white; text-decoration: none\">
+                Edit ";
+            // line 96
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["mission"]) || array_key_exists("mission", $context) ? $context["mission"] : (function () { throw new RuntimeError('Variable "mission" does not exist.', 96, $this->source); })()), "title", [], "any", false, false, false, 96), "html", null, true);
+            echo "
+            </a>
+        </button>
+        <button class=\"btn btn-md btn-danger mx-1 mb-5\">
+            <a href=\"";
+            // line 100
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("mission_delete", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["mission"]) || array_key_exists("mission", $context) ? $context["mission"] : (function () { throw new RuntimeError('Variable "mission" does not exist.', 100, $this->source); })()), "id", [], "any", false, false, false, 100)]), "html", null, true);
+            echo "\" style=\"color: white; text-decoration: none\">
+                Delete ";
+            // line 101
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["mission"]) || array_key_exists("mission", $context) ? $context["mission"] : (function () { throw new RuntimeError('Variable "mission" does not exist.', 101, $this->source); })()), "title", [], "any", false, false, false, 101), "html", null, true);
+            echo "
+            </a>
+        </button>
     ";
+        }
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -308,7 +315,7 @@ class __TwigTemplate_730e4a97d7931ebf88e80c0004e806d495c7337bd21bdd3f49697ac1ae9
 
     public function getDebugInfo()
     {
-        return array (  286 => 100,  282 => 99,  275 => 95,  271 => 94,  263 => 89,  260 => 88,  252 => 82,  245 => 77,  236 => 74,  231 => 73,  227 => 72,  222 => 70,  217 => 67,  208 => 64,  203 => 63,  199 => 62,  194 => 60,  189 => 57,  180 => 54,  176 => 53,  173 => 52,  169 => 51,  164 => 49,  158 => 46,  151 => 42,  144 => 38,  137 => 34,  130 => 30,  123 => 26,  116 => 22,  109 => 18,  100 => 12,  97 => 11,  95 => 10,  92 => 9,  82 => 8,  69 => 5,  59 => 4,  36 => 1,);
+        return array (  292 => 101,  288 => 100,  281 => 96,  277 => 95,  269 => 90,  266 => 89,  264 => 88,  256 => 83,  248 => 77,  239 => 74,  234 => 73,  230 => 72,  225 => 70,  220 => 67,  211 => 64,  206 => 63,  202 => 62,  197 => 60,  192 => 57,  183 => 54,  179 => 53,  176 => 52,  172 => 51,  167 => 49,  161 => 46,  157 => 45,  151 => 42,  144 => 38,  137 => 34,  130 => 30,  123 => 26,  116 => 22,  109 => 18,  100 => 12,  97 => 11,  95 => 10,  92 => 9,  82 => 8,  69 => 5,  59 => 4,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -357,7 +364,7 @@ class __TwigTemplate_730e4a97d7931ebf88e80c0004e806d495c7337bd21bdd3f49697ac1ae9
                 <td>{{ mission.endDate }}</td>
             </tr>
             <tr>
-                <th>Required skills</th>
+                <th><a href=\"{{ path('skills_index') }}\" style=\"color: black\">Skills</a> required</th>
                 <td>{{ mission.skills.name }}</td>
             </tr>
             <tr>
@@ -393,29 +400,30 @@ class __TwigTemplate_730e4a97d7931ebf88e80c0004e806d495c7337bd21bdd3f49697ac1ae9
             </tr>
         </tbody>
     </table>
+
     <button class=\"btn btn-md btn-primary mx-5 mb-5\">
         <a href=\"{{ path('app_login') }}\" style=\"color: white; text-decoration: none\">
             Sign in
         </a>
     </button>
 
-    {#  {% if is_granted('ROLE_ADMIN') %} #}
-    <button class=\"btn btn-md btn-success mx-2 mb-5\">
-        <a href=\"{{ path('mission_add') }}\" style=\"color: white; text-decoration: none\">
-            Add a mission
-        </a>
-    </button>
-    <button class=\"btn btn-md btn-warning mx-1 mb-5\">
-        <a href=\"{{ path('mission_update', {'id': mission.id}) }}\" style=\"color: white; text-decoration: none\">
-            Edit {{ mission.title }}
-        </a>
-    </button>
-    <button class=\"btn btn-md btn-danger mx-1 mb-5\">
-        <a href=\"{{ path('mission_delete', {'id': mission.id}) }}\" style=\"color: white; text-decoration: none\">
-            Delete {{ mission.title }}
-        </a>
-    </button>
-    {#  {% endif %}#}
+    {% if is_granted('ROLE_ADMIN') %}
+        <button class=\"btn btn-md btn-success mx-2 mb-5\">
+            <a href=\"{{ path('mission_add') }}\" style=\"color: white; text-decoration: none\">
+                Add a mission
+            </a>
+        </button>
+        <button class=\"btn btn-md btn-warning mx-1 mb-5\">
+            <a href=\"{{ path('mission_update', {'id': mission.id}) }}\" style=\"color: white; text-decoration: none\">
+                Edit {{ mission.title }}
+            </a>
+        </button>
+        <button class=\"btn btn-md btn-danger mx-1 mb-5\">
+            <a href=\"{{ path('mission_delete', {'id': mission.id}) }}\" style=\"color: white; text-decoration: none\">
+                Delete {{ mission.title }}
+            </a>
+        </button>
+    {% endif %}
 {% endblock %}", "missions/showMission.html.twig", "/Users/paulfaguet/Desktop/FBI_APP/templates/missions/showMission.html.twig");
     }
 }
