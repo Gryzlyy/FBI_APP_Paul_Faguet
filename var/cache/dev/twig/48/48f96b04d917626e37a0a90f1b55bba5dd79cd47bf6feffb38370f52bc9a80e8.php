@@ -90,21 +90,8 @@ class __TwigTemplate_649ef14b97592a377626e07a4faac4be34fac42cc76c216d246e0ae14cf
         echo "
     ";
         // line 9
-        $this->loadTemplate("_header.html.twig", "missions/addMission.html.twig", 9)->display($context);
+        $this->loadTemplate("_form.html.twig", "missions/addMission.html.twig", 9)->display($context);
         // line 10
-        echo "
-    ";
-        // line 11
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 11, $this->source); })()), 'form_start');
-        echo "
-    ";
-        // line 12
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 12, $this->source); })()), 'widget');
-        echo "
-    <input type=\"submit\" />
-    ";
-        // line 14
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 14, $this->source); })()), 'form_end');
         echo "
 ";
         
@@ -127,7 +114,7 @@ class __TwigTemplate_649ef14b97592a377626e07a4faac4be34fac42cc76c216d246e0ae14cf
 
     public function getDebugInfo()
     {
-        return array (  107 => 14,  102 => 12,  98 => 11,  95 => 10,  93 => 9,  90 => 8,  80 => 7,  69 => 4,  59 => 3,  36 => 1,);
+        return array (  95 => 10,  93 => 9,  90 => 8,  80 => 7,  69 => 4,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -140,12 +127,8 @@ class __TwigTemplate_649ef14b97592a377626e07a4faac4be34fac42cc76c216d246e0ae14cf
 
 {% block body %}
 
-    {% include '_header.html.twig' %}
+    {% include '_form.html.twig' %}
 
-    {{ form_start(form) }}
-    {{ form_widget(form) }}
-    <input type=\"submit\" />
-    {{ form_end(form) }}
 {% endblock %}", "missions/addMission.html.twig", "/Users/paulfaguet/Desktop/FBI_APP/templates/missions/addMission.html.twig");
     }
 }

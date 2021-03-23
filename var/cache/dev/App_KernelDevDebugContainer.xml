@@ -4496,6 +4496,12 @@
         <argument key="contactsRepository" type="service" id="App\Repository\ContactsRepository"/>
       </argument>
     </service>
+    <service id=".service_locator.PSyw5ap" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="contact" type="service" id=".errored..service_locator.PSyw5ap.App\Entity\Contacts"/>
+      </argument>
+    </service>
     <service id=".service_locator.18TYlwJ" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
@@ -4506,6 +4512,12 @@
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="missionsRepository" type="service" id="App\Repository\MissionsRepository"/>
+      </argument>
+    </service>
+    <service id=".service_locator.m4CZkxN" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="missions" type="service" id=".errored..service_locator.m4CZkxN.App\Entity\Missions"/>
       </argument>
     </service>
     <service id=".service_locator.UDgw6Ol" class="Symfony\Component\DependencyInjection\ServiceLocator">
@@ -4526,15 +4538,17 @@
         <argument key="targetsRepository" type="service" id="App\Repository\TargetsRepository"/>
       </argument>
     </service>
-    <service id=".service_locator.sTu5She" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.hmNB7je" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Controller\AgentsController::index" type="service" id=".service_locator.qqrmxZx"/>
         <argument key="App\Controller\AgentsController::showAgent" type="service" id=".service_locator.qqrmxZx"/>
+        <argument key="App\Controller\ContactsController::deleteContact" type="service" id=".service_locator.PSyw5ap"/>
         <argument key="App\Controller\ContactsController::index" type="service" id=".service_locator.3_A.QSe"/>
         <argument key="App\Controller\ContactsController::showContact" type="service" id=".service_locator.3_A.QSe"/>
         <argument key="App\Controller\HideoutsController::index" type="service" id=".service_locator.18TYlwJ"/>
         <argument key="App\Controller\HideoutsController::showHideout" type="service" id=".service_locator.18TYlwJ"/>
+        <argument key="App\Controller\MissionsController::deleteMission" type="service" id=".service_locator.m4CZkxN"/>
         <argument key="App\Controller\MissionsController::index" type="service" id=".service_locator.7l.0eYI"/>
         <argument key="App\Controller\MissionsController::showMission" type="service" id=".service_locator.7l.0eYI"/>
         <argument key="App\Controller\SecurityController::login" type="service" id=".service_locator.UDgw6Ol"/>
@@ -4550,10 +4564,12 @@
         <argument key="kernel::terminate" type="service" id=".service_locator.KfwZsne"/>
         <argument key="App\Controller\AgentsController:index" type="service" id=".service_locator.qqrmxZx"/>
         <argument key="App\Controller\AgentsController:showAgent" type="service" id=".service_locator.qqrmxZx"/>
+        <argument key="App\Controller\ContactsController:deleteContact" type="service" id=".service_locator.PSyw5ap"/>
         <argument key="App\Controller\ContactsController:index" type="service" id=".service_locator.3_A.QSe"/>
         <argument key="App\Controller\ContactsController:showContact" type="service" id=".service_locator.3_A.QSe"/>
         <argument key="App\Controller\HideoutsController:index" type="service" id=".service_locator.18TYlwJ"/>
         <argument key="App\Controller\HideoutsController:showHideout" type="service" id=".service_locator.18TYlwJ"/>
+        <argument key="App\Controller\MissionsController:deleteMission" type="service" id=".service_locator.m4CZkxN"/>
         <argument key="App\Controller\MissionsController:index" type="service" id=".service_locator.7l.0eYI"/>
         <argument key="App\Controller\MissionsController:showMission" type="service" id=".service_locator.7l.0eYI"/>
         <argument key="App\Controller\SecurityController:login" type="service" id=".service_locator.UDgw6Ol"/>
@@ -4986,15 +5002,17 @@
       <argument type="service" id="security.token_storage"/>
     </service>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">
-      <argument type="service" id=".service_locator.sTu5She"/>
+      <argument type="service" id=".service_locator.hmNB7je"/>
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver"/>
     <service id="debug.argument_resolver.not_tagged_controller.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver">
-      <argument type="service" id=".service_locator.sTu5She"/>
+      <argument type="service" id=".service_locator.hmNB7je"/>
     </service>
     <service id=".errored..service_locator.KfwZsne.Symfony\Component\HttpFoundation\Response" class="Symfony\Component\HttpFoundation\Response"/>
     <service id=".errored..service_locator.KfbR3DY.Symfony\Component\Config\Loader\LoaderInterface" class="Symfony\Component\Config\Loader\LoaderInterface"/>
+    <service id=".errored..service_locator.PSyw5ap.App\Entity\Contacts" class="App\Entity\Contacts"/>
+    <service id=".errored..service_locator.m4CZkxN.App\Entity\Missions" class="App\Entity\Missions"/>
     <service id="console.command_loader" class="Symfony\Component\Console\CommandLoader\ContainerCommandLoader" public="true">
       <tag name="container.no_preload"/>
       <argument type="service" id=".service_locator.nAAefPy"/>
@@ -5353,7 +5371,7 @@
     <service id="Symfony\Component\Security\Core\User\UserCheckerInterface" alias="security.user_checker"/>
     <service id="container.env_var_processors_locator" alias=".service_locator.Kbr2i2X" public="true"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.sTu5She"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.hmNB7je"/>
     <service id="twig.loader" alias="twig.loader.native_filesystem"/>
     <service id="Psr\Log\LoggerInterface $requestLogger" alias="monolog.logger.request"/>
     <service id="Psr\Log\LoggerInterface $consoleLogger" alias="monolog.logger.console"/>

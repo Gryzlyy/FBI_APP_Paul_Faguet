@@ -90,23 +90,7 @@ class __TwigTemplate_5fd2049b22c397e5414ed1f9ca1dd65bd1a134b9c5ddefe602a70b351e1
         echo "
     ";
         // line 9
-        $this->loadTemplate("_header.html.twig", "targets/addTarget.html.twig", 9)->display($context);
-        // line 10
-        echo "
-    ";
-        // line 11
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 11, $this->source); })()), 'form_start');
-        echo "
-    ";
-        // line 12
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 12, $this->source); })()), 'widget');
-        echo "
-    <input type=\"submit\" />
-    ";
-        // line 14
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 14, $this->source); })()), 'form_end');
-        echo "
-";
+        $this->loadTemplate("_form.html.twig", "targets/addTarget.html.twig", 9)->display($context);
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -127,7 +111,7 @@ class __TwigTemplate_5fd2049b22c397e5414ed1f9ca1dd65bd1a134b9c5ddefe602a70b351e1
 
     public function getDebugInfo()
     {
-        return array (  107 => 14,  102 => 12,  98 => 11,  95 => 10,  93 => 9,  90 => 8,  80 => 7,  69 => 4,  59 => 3,  36 => 1,);
+        return array (  93 => 9,  90 => 8,  80 => 7,  69 => 4,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -140,12 +124,7 @@ class __TwigTemplate_5fd2049b22c397e5414ed1f9ca1dd65bd1a134b9c5ddefe602a70b351e1
 
 {% block body %}
 
-    {% include '_header.html.twig' %}
-
-    {{ form_start(form) }}
-    {{ form_widget(form) }}
-    <input type=\"submit\" />
-    {{ form_end(form) }}
+    {% include '_form.html.twig' %}
 {% endblock %}", "targets/addTarget.html.twig", "/Users/paulfaguet/Desktop/FBI_APP/templates/targets/addTarget.html.twig");
     }
 }

@@ -20,7 +20,7 @@ return [
         '/hideouts' => [[['_route' => 'hideouts_index', '_controller' => 'App\\Controller\\HideoutsController::index'], null, null, null, false, false, null]],
         '/hideouts-add' => [[['_route' => 'hideout_add', '_controller' => 'App\\Controller\\HideoutsController::addSkill'], null, null, null, false, false, null]],
         '/' => [[['_route' => 'app.home', '_controller' => 'App\\Controller\\MissionsController::index'], null, null, null, false, false, null]],
-        '/missions-add' => [[['_route' => 'mission_add', '_controller' => 'App\\Controller\\MissionsController::addSkill'], null, null, null, false, false, null]],
+        '/missions-add' => [[['_route' => 'mission_add', '_controller' => 'App\\Controller\\MissionsController::addMission'], null, null, null, false, false, null]],
         '/login' => [[['_route' => 'app_login', '_controller' => 'App\\Controller\\SecurityController::login'], null, null, null, false, false, null]],
         '/logout' => [[['_route' => 'app_logout', '_controller' => 'App\\Controller\\SecurityController::logout'], null, null, null, false, false, null]],
         '/skills' => [[['_route' => 'skills_index', '_controller' => 'App\\Controller\\SkillsController::index'], null, null, null, false, false, null]],
@@ -46,11 +46,16 @@ return [
                     .')'
                 .')'
                 .'|/agents/([^/]++)(*:185)'
-                .'|/contacts/([^/]++)(*:211)'
-                .'|/hideouts/([^/]++)(*:237)'
-                .'|/missions/([^/]++)(*:263)'
-                .'|/skills/([^/]++)(*:287)'
-                .'|/targets/([^/]++)(*:312)'
+                .'|/contacts/([^/]++)(?'
+                    .'|(*:214)'
+                .')'
+                .'|/hideouts/([^/]++)(*:241)'
+                .'|/missions/([^/]++)(?'
+                    .'|(*:270)'
+                    .'|/delete(*:285)'
+                .')'
+                .'|/skills/([^/]++)(*:310)'
+                .'|/targets/([^/]++)(*:335)'
             .')/?$}sDu',
     ],
     [ // $dynamicRoutes
@@ -62,11 +67,15 @@ return [
         149 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception_panel::stylesheet'], ['token'], null, null, false, false, null]],
         159 => [[['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null]],
         185 => [[['_route' => 'agent_details', '_controller' => 'App\\Controller\\AgentsController::showAgent'], ['id'], null, null, false, true, null]],
-        211 => [[['_route' => 'contact_details', '_controller' => 'App\\Controller\\ContactsController::showContact'], ['id'], null, null, false, true, null]],
-        237 => [[['_route' => 'hideout_details', '_controller' => 'App\\Controller\\HideoutsController::showHideout'], ['id'], null, null, false, true, null]],
-        263 => [[['_route' => 'mission_details', '_controller' => 'App\\Controller\\MissionsController::showMission'], ['id'], null, null, false, true, null]],
-        287 => [[['_route' => 'skill_details', '_controller' => 'App\\Controller\\SkillsController::showSkill'], ['id'], null, null, false, true, null]],
-        312 => [
+        214 => [
+            [['_route' => 'contact_details', '_controller' => 'App\\Controller\\ContactsController::showContact'], ['id'], null, null, false, true, null],
+            [['_route' => 'contact_delete', '_controller' => 'App\\Controller\\ContactsController::deleteContact'], ['id'], ['DELETE' => 0], null, false, true, null],
+        ],
+        241 => [[['_route' => 'hideout_details', '_controller' => 'App\\Controller\\HideoutsController::showHideout'], ['id'], null, null, false, true, null]],
+        270 => [[['_route' => 'mission_details', '_controller' => 'App\\Controller\\MissionsController::showMission'], ['id'], null, null, false, true, null]],
+        285 => [[['_route' => 'mission_delete', '_controller' => 'App\\Controller\\MissionsController::deleteMission'], ['id'], null, null, false, false, null]],
+        310 => [[['_route' => 'skill_details', '_controller' => 'App\\Controller\\SkillsController::showSkill'], ['id'], null, null, false, true, null]],
+        335 => [
             [['_route' => 'target_details', '_controller' => 'App\\Controller\\TargetsController::showAgent'], ['id'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],

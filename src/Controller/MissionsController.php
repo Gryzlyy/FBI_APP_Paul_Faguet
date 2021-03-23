@@ -33,7 +33,7 @@ class MissionsController extends AbstractController
     /**
      * @Route ("/missions-add", name="mission_add")
      */
-    public function addSkill(Request $request): Response
+    public function addMission(Request $request): Response
     {
         $mission = new Missions();
         $form = $this->createForm(AddMissionType::class, $mission);
@@ -48,6 +48,31 @@ class MissionsController extends AbstractController
         }
 
         return $this->render('missions/addMission.html.twig', [
+            'form' => $form->createView(),
+        ]);
+    }
+
+    /**
+     * @Route ("missions/{id}/delete", name="mission_delete")
+     */
+    public function deleteMission(Request $request, Missions $missions): Response
+    {
+        $form = $this->createForm(AddMissionType::class, $missions);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            if (!$missions->isMissionValid()) {
+                $this->addFlash('error', 'Your mission does not contain valids items. Please check the following: Agent(s) skill(s) / Nationality of agents or contacts / Hideaway country');
+                return $this->redirectToRoute('app.home');
+            };
+
+            $this->getDoctrine()->getManager()->flush();
+
+            return $this->redirectToRoute('app.home');
+        }
+
+        return $this->render('missions/edit.html.twig', [
+            'mission' => $missions,
             'form' => $form->createView(),
         ]);
     }

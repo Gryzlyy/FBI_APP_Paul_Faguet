@@ -33,6 +33,7 @@ class AddMissionType extends AbstractType
                 'class' => Contacts::class,
                 'multiple' => true,
                 'expanded' => true,
+                'by_reference' => false,
             ])
             ->add('targets', EntityType::class, [
                 'class' => Targets::class,
