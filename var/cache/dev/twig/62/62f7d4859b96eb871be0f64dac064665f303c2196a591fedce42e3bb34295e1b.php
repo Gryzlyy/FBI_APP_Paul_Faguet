@@ -104,7 +104,7 @@ class __TwigTemplate_22825d49c7c41f9eaafd9b7a547b948fbf21567a195f2af7c06dc8c6b9b
         // line 13
         echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 13, $this->source); })()), 'widget');
         echo "
-    <button class=\"btn btn-success m-3\" type=\"submit\">SEND</button>
+    <button class=\"btn btn-success m-3\" type=\"submit\">Send</button>
 
     ";
         // line 16
@@ -155,7 +155,7 @@ class __TwigTemplate_22825d49c7c41f9eaafd9b7a547b948fbf21567a195f2af7c06dc8c6b9b
 
     {{ form_start(form) }}
     {{ form_widget(form) }}
-    <button class=\"btn btn-success m-3\" type=\"submit\">SEND</button>
+    <button class=\"btn btn-success m-3\" type=\"submit\">Send</button>
 
     {% include '_cancelBtn.html.twig' %}
 

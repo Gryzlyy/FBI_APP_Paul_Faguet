@@ -1,0 +1,6 @@
+[2021-03-24T07:39:25.617967+00:00] request.INFO: Matched route "app_login". {"route":"app_login","route_parameters":{"_route":"app_login","_controller":"App\\Controller\\SecurityController::login"},"request_uri":"http://localhost:8000/login","method":"GET"} []
+[2021-03-24T07:39:25.620610+00:00] security.DEBUG: Checking for guard authentication credentials. {"firewall_key":"main","authenticators":1} []
+[2021-03-24T07:39:25.620706+00:00] security.DEBUG: Checking support on guard authenticator. {"firewall_key":"main","authenticator":"App\\Security\\LoginFormAuthenticator"} []
+[2021-03-24T07:39:25.620765+00:00] security.DEBUG: Guard authenticator does not support the request. {"firewall_key":"main","authenticator":"App\\Security\\LoginFormAuthenticator"} []
+[2021-03-24T07:39:25.645344+00:00] security.INFO: Populated the TokenStorage with an anonymous Token. [] []
+[2021-03-24T07:39:25.714216+00:00] request.INFO: Matched route "_wdt". {"route":"_wdt","route_parameters":{"_route":"_wdt","_controller":"web_profiler.controller.profiler::toolbarAction","token":"4fdfc3"},"request_uri":"http://localhost:8000/_wdt/4fdfc3","method":"GET"} []

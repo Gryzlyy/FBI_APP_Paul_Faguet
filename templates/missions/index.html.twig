@@ -87,4 +87,10 @@
         </button>
   {% endif %}
 
+    {% for message in app.flashes('error') %}
+        <div class="flash-notice">
+            {{ message }}
+        </div>
+    {% endfor %}
+
 {% endblock %}

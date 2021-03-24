@@ -117,6 +117,17 @@ class Agents
         return $this->skills;
     }
 
+    public function displaySkills()
+    {
+        $agentsSkills = $this->skills;
+        $skillsList = [];
+
+        foreach ($agentsSkills as $skill) {
+            $skillsList[] = $skill->getName();
+        }
+        return $skillsList;
+    }
+
     public function addSkill(Skills $skill): self
     {
         if (!$this->skills->contains($skill)) {

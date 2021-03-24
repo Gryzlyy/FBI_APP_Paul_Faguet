@@ -8,10 +8,15 @@ return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\
     [
         'Symfony\\Component\\Routing\\Annotation\\Route' => [
             'path' => [
-                'missions/{id}/delete',
+                '/missions/{id}/delete',
             ],
             'name' => [
                 'mission_delete',
+            ],
+            'methods' => [
+                [
+                    'GET',
+                ],
             ],
         ],
     ],

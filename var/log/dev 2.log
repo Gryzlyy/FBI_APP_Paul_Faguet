@@ -1,0 +1,7 @@
+[2021-03-24T07:39:08.890102+00:00] request.INFO: Matched route "app.home". {"route":"app.home","route_parameters":{"_route":"app.home","_controller":"App\\Controller\\MissionsController::index"},"request_uri":"http://localhost:8000/","method":"GET"} []
+[2021-03-24T07:39:08.980508+00:00] security.DEBUG: Checking for guard authentication credentials. {"firewall_key":"main","authenticators":1} []
+[2021-03-24T07:39:08.980608+00:00] security.DEBUG: Checking support on guard authenticator. {"firewall_key":"main","authenticator":"App\\Security\\LoginFormAuthenticator"} []
+[2021-03-24T07:39:08.980667+00:00] security.DEBUG: Guard authenticator does not support the request. {"firewall_key":"main","authenticator":"App\\Security\\LoginFormAuthenticator"} []
+[2021-03-24T07:39:09.483771+00:00] doctrine.DEBUG: SELECT t0.id AS id_1, t0.title AS title_2, t0.description AS description_3, t0.country AS country_4, t0.type AS type_5, t0.status AS status_6, t0.start_date AS start_date_7, t0.end_date AS end_date_8, t0.skills_id AS skills_id_9, t0.hideouts_id AS hideouts_id_10 FROM missions t0 [] []
+[2021-03-24T07:39:09.591054+00:00] security.INFO: Populated the TokenStorage with an anonymous Token. [] []
+[2021-03-24T07:39:09.967113+00:00] request.INFO: Matched route "_wdt". {"route":"_wdt","route_parameters":{"_route":"_wdt","_controller":"web_profiler.controller.profiler::toolbarAction","token":"41feb2"},"request_uri":"http://localhost:8000/_wdt/41feb2","method":"GET"} []

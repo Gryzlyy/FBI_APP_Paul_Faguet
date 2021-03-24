@@ -41,6 +41,10 @@ class MissionsController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+            if (!$mission->isMissionValid()) {
+                $this->addFlash('error', 'The mission "'.$mission->getTitle().'" previously created does not contains valids items. Please read the constraints and retry.');
+                return $this->redirectToRoute('app.home');
+            }
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($mission);
             $entityManager->flush();
@@ -56,12 +60,16 @@ class MissionsController extends AbstractController
     /**
      * @Route ("/missions/{id}/update", name="mission_update", methods={"GET", "POST"})
      */
-    public function updateContact(Request $request, Missions $mission): Response
+    public function updateMission(Request $request, Missions $mission): Response
     {
         $form = $this->createForm(AddMissionType::class, $mission);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+            if (!$mission->isMissionValid()) {
+                $this->addFlash('error', 'This mission '.$mission->getTitle().' does not contains valids items. Please read the constraints and retry.');
+                return $this->redirectToRoute('app.home');
+            }
             $this->getDoctrine()->getManager()->flush();
 
             return $this->redirectToRoute('app.home');
@@ -76,7 +84,7 @@ class MissionsController extends AbstractController
     /**
      * @Route ("/missions/{id}/delete", name="mission_delete", methods={"GET"})
      */
-    public function deleteContact(int $id, MissionsRepository $missionsRepository): Response
+    public function deleteMission(int $id, MissionsRepository $missionsRepository): Response
     {
         $entityManager = $this->getDoctrine()->getManager();
 

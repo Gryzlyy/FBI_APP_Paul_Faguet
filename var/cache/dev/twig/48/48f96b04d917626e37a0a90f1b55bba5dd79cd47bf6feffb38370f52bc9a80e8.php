@@ -93,6 +93,25 @@ class __TwigTemplate_649ef14b97592a377626e07a4faac4be34fac42cc76c216d246e0ae14cf
         $this->loadTemplate("_form.html.twig", "missions/addMission.html.twig", 9)->display($context);
         // line 10
         echo "
+    ";
+        // line 11
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 11, $this->source); })()), "flashes", [0 => "error"], "method", false, false, false, 11));
+        foreach ($context['_seq'] as $context["_key"] => $context["message"]) {
+            // line 12
+            echo "        <div class=\"flash-notice\">
+            ";
+            // line 13
+            echo twig_escape_filter($this->env, $context["message"], "html", null, true);
+            echo "
+        </div>
+    ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['message'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 16
+        echo "
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -114,7 +133,7 @@ class __TwigTemplate_649ef14b97592a377626e07a4faac4be34fac42cc76c216d246e0ae14cf
 
     public function getDebugInfo()
     {
-        return array (  95 => 10,  93 => 9,  90 => 8,  80 => 7,  69 => 4,  59 => 3,  36 => 1,);
+        return array (  114 => 16,  105 => 13,  102 => 12,  98 => 11,  95 => 10,  93 => 9,  90 => 8,  80 => 7,  69 => 4,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -128,6 +147,12 @@ class __TwigTemplate_649ef14b97592a377626e07a4faac4be34fac42cc76c216d246e0ae14cf
 {% block body %}
 
     {% include '_form.html.twig' %}
+
+    {% for message in app.flashes('error') %}
+        <div class=\"flash-notice\">
+            {{ message }}
+        </div>
+    {% endfor %}
 
 {% endblock %}", "missions/addMission.html.twig", "/Users/paulfaguet/Desktop/FBI_APP/templates/missions/addMission.html.twig");
     }

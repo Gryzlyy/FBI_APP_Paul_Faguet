@@ -279,4 +279,78 @@ class Missions
     {
         return $this->title;
     }
+
+
+    // Missions' constraints
+    public function areAgentNatAndTargetNatValid()
+    {
+        $agents = $this->agents;
+        $targets = $this->targets;
+
+        foreach ($agents as $agent)
+        {
+            foreach ($targets as $target)
+            {
+                if ($agent->getNationality() == $target->getNationality()) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    public function areContactNatAndMissionCountryValid()
+    {
+        $missionCountry = $this->country;
+        $contacts = $this->contacts;
+
+        foreach ($contacts as $contact)
+        {
+            if ($contact->getNationality() != $missionCountry) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public function areHideoutCountryAndMissionCountryValid()
+    {
+        $hideouts = $this->hideouts;
+        $missionCountry = $this->country;
+
+            if ($hideouts) {
+                if ($hideouts->getCountry() != $missionCountry) {
+                    return false;
+                }
+            }
+        return true;
+    }
+
+    public function areMissionSkillAndAgentSkillValid()
+    {
+        $missionSkill = $this->skills;
+        $agents = $this->agents;
+        $skillsOk = 0;
+
+        foreach($agents as $agent)
+        {
+            $agentSkills = $agent->displaySkills();
+            if (in_array($missionSkill->getName(), $agentSkills)) {
+                $skillsOk += 1;
+            }
+            if ($skillsOk == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public function isMissionValid()
+    {
+        if (!$this->areAgentNatAndTargetNatValid() || !$this->areContactNatAndMissionCountryValid() || !$this->areHideoutCountryAndMissionCountryValid() || !$this->areMissionSkillAndAgentSkillValid())
+        {
+            return false;
+        }
+        return true;
+    }
 }
