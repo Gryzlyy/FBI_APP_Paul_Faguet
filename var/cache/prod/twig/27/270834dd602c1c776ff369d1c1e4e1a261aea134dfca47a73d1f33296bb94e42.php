@@ -123,22 +123,19 @@ class __TwigTemplate_854b4cb637f3f03a604c479bb087ed5a1a9e90db15a0444f943dc58647a
         </tr>
         </tbody>
     </table>
-    <button class=\"btn btn-md btn-primary mx-5 mb-5\">
-        <a href=\"";
-        // line 41
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
-        echo "\" style=\"color: white; text-decoration: none\">
-            Sign in
-        </a>
-    </button>
 
     ";
-        // line 46
+        // line 41
+        $this->loadTemplate("_signInBtn.html.twig", "hideouts/showHideout.html.twig", 41)->display($context);
+        // line 42
+        echo "
+    ";
+        // line 43
         if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_ADMIN")) {
-            // line 47
-            echo "    <button class=\"btn btn-md btn-success mx-2 mb-5\">
+            // line 44
+            echo "    <button class=\"btn btn-md btn-success ms-5 mb-5\">
         <a href=\"";
-            // line 48
+            // line 45
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("hideout_add");
             echo "\" style=\"color: white; text-decoration: none\">
             Add an hideout
@@ -146,23 +143,23 @@ class __TwigTemplate_854b4cb637f3f03a604c479bb087ed5a1a9e90db15a0444f943dc58647a
     </button>
     <button class=\"btn btn-md btn-warning mx-1 mb-5\">
         <a href=\"";
-            // line 53
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("hideout_update", ["id" => twig_get_attribute($this->env, $this->source, ($context["hideout"] ?? null), "id", [], "any", false, false, false, 53)]), "html", null, true);
+            // line 50
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("hideout_update", ["id" => twig_get_attribute($this->env, $this->source, ($context["hideout"] ?? null), "id", [], "any", false, false, false, 50)]), "html", null, true);
             echo "\" style=\"color: white; text-decoration: none\">
             Edit \"";
-            // line 54
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["hideout"] ?? null), "address", [], "any", false, false, false, 54), "html", null, true);
+            // line 51
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["hideout"] ?? null), "address", [], "any", false, false, false, 51), "html", null, true);
             echo "\"
         </a>
     </button>
     <button class=\"btn btn-md btn-danger mx-1 mb-5\">
         <a href=\"";
-            // line 58
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("hideout_delete", ["id" => twig_get_attribute($this->env, $this->source, ($context["hideout"] ?? null), "id", [], "any", false, false, false, 58)]), "html", null, true);
+            // line 55
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("hideout_delete", ["id" => twig_get_attribute($this->env, $this->source, ($context["hideout"] ?? null), "id", [], "any", false, false, false, 55)]), "html", null, true);
             echo "\" style=\"color: white; text-decoration: none\">
             Delete \"";
-            // line 59
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["hideout"] ?? null), "address", [], "any", false, false, false, 59), "html", null, true);
+            // line 56
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["hideout"] ?? null), "address", [], "any", false, false, false, 56), "html", null, true);
             echo "\"
         </a>
     </button>
@@ -182,7 +179,7 @@ class __TwigTemplate_854b4cb637f3f03a604c479bb087ed5a1a9e90db15a0444f943dc58647a
 
     public function getDebugInfo()
     {
-        return array (  165 => 59,  161 => 58,  154 => 54,  150 => 53,  142 => 48,  139 => 47,  137 => 46,  129 => 41,  122 => 36,  113 => 33,  108 => 32,  104 => 31,  99 => 29,  93 => 26,  86 => 22,  79 => 18,  70 => 12,  67 => 11,  65 => 10,  62 => 9,  58 => 8,  51 => 5,  47 => 4,  36 => 1,);
+        return array (  162 => 56,  158 => 55,  151 => 51,  147 => 50,  139 => 45,  136 => 44,  134 => 43,  131 => 42,  129 => 41,  122 => 36,  113 => 33,  108 => 32,  104 => 31,  99 => 29,  93 => 26,  86 => 22,  79 => 18,  70 => 12,  67 => 11,  65 => 10,  62 => 9,  58 => 8,  51 => 5,  47 => 4,  36 => 1,);
     }
 
     public function getSourceContext()

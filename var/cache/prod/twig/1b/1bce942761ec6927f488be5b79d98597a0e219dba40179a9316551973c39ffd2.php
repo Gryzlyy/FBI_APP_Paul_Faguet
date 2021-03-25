@@ -148,22 +148,19 @@ class __TwigTemplate_21f58d5e429a567d62991185aea93ccc1c85e2ceb7415dc5afe36d702ab
         </tr>
         </tbody>
     </table>
-    <button class=\"btn btn-md btn-primary mx-5 mb-5\">
-        <a href=\"";
-        // line 47
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
-        echo "\" style=\"color: white; text-decoration: none\">
-            Sign in
-        </a>
-    </button>
 
     ";
-        // line 52
+        // line 47
+        $this->loadTemplate("_signInBtn.html.twig", "skills/showSkill.html.twig", 47)->display($context);
+        // line 48
+        echo "
+    ";
+        // line 49
         if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_ADMIN")) {
-            // line 53
-            echo "        <button class=\"btn btn-md btn-success mx-2 mb-5\">
+            // line 50
+            echo "        <button class=\"btn btn-md btn-success ms-5 mb-5\">
             <a href=\"";
-            // line 54
+            // line 51
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("skill_add");
             echo "\" style=\"color: white; text-decoration: none\">
                 Add a skill
@@ -171,23 +168,23 @@ class __TwigTemplate_21f58d5e429a567d62991185aea93ccc1c85e2ceb7415dc5afe36d702ab
         </button>
         <button class=\"btn btn-md btn-warning mx-1 mb-5\">
             <a href=\"";
-            // line 59
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("skill_update", ["id" => twig_get_attribute($this->env, $this->source, ($context["skill"] ?? null), "id", [], "any", false, false, false, 59)]), "html", null, true);
+            // line 56
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("skill_update", ["id" => twig_get_attribute($this->env, $this->source, ($context["skill"] ?? null), "id", [], "any", false, false, false, 56)]), "html", null, true);
             echo "\" style=\"color: white; text-decoration: none\">
                 Edit \"";
-            // line 60
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["skill"] ?? null), "name", [], "any", false, false, false, 60), "html", null, true);
+            // line 57
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["skill"] ?? null), "name", [], "any", false, false, false, 57), "html", null, true);
             echo "\"
             </a>
         </button>
         <button class=\"btn btn-md btn-danger mx-1 mb-5\">
             <a href=\"";
-            // line 64
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("skill_delete", ["id" => twig_get_attribute($this->env, $this->source, ($context["skill"] ?? null), "id", [], "any", false, false, false, 64)]), "html", null, true);
+            // line 61
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("skill_delete", ["id" => twig_get_attribute($this->env, $this->source, ($context["skill"] ?? null), "id", [], "any", false, false, false, 61)]), "html", null, true);
             echo "\" style=\"color: white; text-decoration: none\">
                 Delete \"";
-            // line 65
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["skill"] ?? null), "name", [], "any", false, false, false, 65), "html", null, true);
+            // line 62
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["skill"] ?? null), "name", [], "any", false, false, false, 62), "html", null, true);
             echo "\"
             </a>
         </button>
@@ -207,7 +204,7 @@ class __TwigTemplate_21f58d5e429a567d62991185aea93ccc1c85e2ceb7415dc5afe36d702ab
 
     public function getDebugInfo()
     {
-        return array (  190 => 65,  186 => 64,  179 => 60,  175 => 59,  167 => 54,  164 => 53,  162 => 52,  154 => 47,  147 => 42,  138 => 39,  133 => 38,  129 => 37,  122 => 35,  117 => 32,  108 => 29,  103 => 28,  99 => 27,  92 => 25,  86 => 22,  79 => 18,  70 => 12,  67 => 11,  65 => 10,  62 => 9,  58 => 8,  51 => 5,  47 => 4,  36 => 1,);
+        return array (  187 => 62,  183 => 61,  176 => 57,  172 => 56,  164 => 51,  161 => 50,  159 => 49,  156 => 48,  154 => 47,  147 => 42,  138 => 39,  133 => 38,  129 => 37,  122 => 35,  117 => 32,  108 => 29,  103 => 28,  99 => 27,  92 => 25,  86 => 22,  79 => 18,  70 => 12,  67 => 11,  65 => 10,  62 => 9,  58 => 8,  51 => 5,  47 => 4,  36 => 1,);
     }
 
     public function getSourceContext()

@@ -118,7 +118,6 @@ class ComposerStaticInit97adaede85d162e9fa09a3ae52c78774
         ),
         'A' => 
         array (
-            'App\\Tests\\' => 10,
             'App\\' => 4,
         ),
     );
@@ -437,10 +436,6 @@ class ComposerStaticInit97adaede85d162e9fa09a3ae52c78774
         'Doctrine\\Bundle\\DoctrineBundle\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/doctrine-bundle',
-        ),
-        'App\\Tests\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/tests',
         ),
         'App\\' => 
         array (

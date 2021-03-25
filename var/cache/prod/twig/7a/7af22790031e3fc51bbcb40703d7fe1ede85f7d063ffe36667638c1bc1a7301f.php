@@ -157,22 +157,18 @@ class __TwigTemplate_fedc7b8a981c4bef651a2213ff7d7fcbd709c6f5dc14821abbfbbc1f29e
         </tbody>
     </table>
 
-    <button class=\"btn btn-md btn-primary mx-4\">
-        <a href=\"";
-        // line 63
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
-        echo "\" style=\"color: white; text-decoration: none\">
-            Sign in
-        </a>
-    </button>
-
     ";
-        // line 68
+        // line 62
+        $this->loadTemplate("_signInBtn.html.twig", "contacts/index.html.twig", 62)->display($context);
+        // line 63
+        echo "
+    ";
+        // line 64
         if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_ADMIN")) {
-            // line 69
-            echo "    <button class=\"btn btn-md btn-success mx-2\">
+            // line 65
+            echo "    <button class=\"btn btn-md btn-success mx-5 mb-5\">
         <a href=\"";
-            // line 70
+            // line 66
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("contact_add");
             echo "\" style=\"color: white; text-decoration: none\">
             Add a contact
@@ -180,7 +176,7 @@ class __TwigTemplate_fedc7b8a981c4bef651a2213ff7d7fcbd709c6f5dc14821abbfbbc1f29e
     </button>
     ";
         }
-        // line 75
+        // line 71
         echo "
 ";
     }
@@ -197,7 +193,7 @@ class __TwigTemplate_fedc7b8a981c4bef651a2213ff7d7fcbd709c6f5dc14821abbfbbc1f29e
 
     public function getDebugInfo()
     {
-        return array (  184 => 75,  176 => 70,  173 => 69,  171 => 68,  163 => 63,  156 => 58,  146 => 53,  136 => 46,  126 => 40,  124 => 39,  120 => 38,  115 => 35,  106 => 33,  102 => 32,  97 => 30,  93 => 29,  89 => 28,  84 => 25,  80 => 24,  63 => 9,  60 => 8,  56 => 7,  51 => 4,  47 => 3,  36 => 1,);
+        return array (  180 => 71,  172 => 66,  169 => 65,  167 => 64,  164 => 63,  162 => 62,  156 => 58,  146 => 53,  136 => 46,  126 => 40,  124 => 39,  120 => 38,  115 => 35,  106 => 33,  102 => 32,  97 => 30,  93 => 29,  89 => 28,  84 => 25,  80 => 24,  63 => 9,  60 => 8,  56 => 7,  51 => 4,  47 => 3,  36 => 1,);
     }
 
     public function getSourceContext()

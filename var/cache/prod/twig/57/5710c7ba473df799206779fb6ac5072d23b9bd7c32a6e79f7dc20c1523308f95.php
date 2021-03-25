@@ -141,22 +141,19 @@ class __TwigTemplate_aa139bcadbad5243854af4ffb6bc87a4c71724aad65a7c557355e0cca7c
         </tr>
         </tbody>
     </table>
-    <button class=\"btn btn-md btn-primary mx-5 mb-5\">
-        <a href=\"";
-        // line 49
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
-        echo "\" style=\"color: white; text-decoration: none\">
-            Sign in
-        </a>
-    </button>
 
     ";
-        // line 54
+        // line 49
+        $this->loadTemplate("_signInBtn.html.twig", "contacts/showContact.html.twig", 49)->display($context);
+        // line 50
+        echo "
+    ";
+        // line 51
         if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_ADMIN")) {
-            // line 55
-            echo "    <button class=\"btn btn-md btn-success mx-2 mb-5\">
+            // line 52
+            echo "    <button class=\"btn btn-md btn-success ms-5 mb-5\">
         <a href=\"";
-            // line 56
+            // line 53
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("contact_add");
             echo "\" style=\"color: white; text-decoration: none\">
             Add a contact
@@ -164,23 +161,23 @@ class __TwigTemplate_aa139bcadbad5243854af4ffb6bc87a4c71724aad65a7c557355e0cca7c
     </button>
     <button class=\"btn btn-md btn-warning mx-1 mb-5\">
         <a href=\"";
-            // line 61
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("contact_update", ["id" => twig_get_attribute($this->env, $this->source, ($context["contact"] ?? null), "id", [], "any", false, false, false, 61)]), "html", null, true);
+            // line 58
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("contact_update", ["id" => twig_get_attribute($this->env, $this->source, ($context["contact"] ?? null), "id", [], "any", false, false, false, 58)]), "html", null, true);
             echo "\" style=\"color: white; text-decoration: none\">
             Edit \"";
-            // line 62
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["contact"] ?? null), "codeName", [], "any", false, false, false, 62), "html", null, true);
+            // line 59
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["contact"] ?? null), "codeName", [], "any", false, false, false, 59), "html", null, true);
             echo "\"
         </a>
     </button>
     <button class=\"btn btn-md btn-danger mx-1 mb-5\">
         <a href=\"";
-            // line 66
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("contact_delete", ["id" => twig_get_attribute($this->env, $this->source, ($context["contact"] ?? null), "id", [], "any", false, false, false, 66)]), "html", null, true);
+            // line 63
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("contact_delete", ["id" => twig_get_attribute($this->env, $this->source, ($context["contact"] ?? null), "id", [], "any", false, false, false, 63)]), "html", null, true);
             echo "\" style=\"color: white; text-decoration: none\">
             Delete \"";
-            // line 67
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["contact"] ?? null), "codeName", [], "any", false, false, false, 67), "html", null, true);
+            // line 64
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["contact"] ?? null), "codeName", [], "any", false, false, false, 64), "html", null, true);
             echo "\"
         </a>
     </button>
@@ -200,7 +197,7 @@ class __TwigTemplate_aa139bcadbad5243854af4ffb6bc87a4c71724aad65a7c557355e0cca7c
 
     public function getDebugInfo()
     {
-        return array (  183 => 67,  179 => 66,  172 => 62,  168 => 61,  160 => 56,  157 => 55,  155 => 54,  147 => 49,  140 => 44,  131 => 41,  126 => 40,  122 => 39,  117 => 37,  111 => 34,  104 => 30,  97 => 26,  90 => 22,  83 => 18,  70 => 12,  67 => 11,  65 => 10,  62 => 9,  58 => 8,  51 => 5,  47 => 4,  36 => 1,);
+        return array (  180 => 64,  176 => 63,  169 => 59,  165 => 58,  157 => 53,  154 => 52,  152 => 51,  149 => 50,  147 => 49,  140 => 44,  131 => 41,  126 => 40,  122 => 39,  117 => 37,  111 => 34,  104 => 30,  97 => 26,  90 => 22,  83 => 18,  70 => 12,  67 => 11,  65 => 10,  62 => 9,  58 => 8,  51 => 5,  47 => 4,  36 => 1,);
     }
 
     public function getSourceContext()

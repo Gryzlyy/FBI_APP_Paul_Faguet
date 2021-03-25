@@ -122,7 +122,7 @@ class __TwigTemplate_31eb280837951f5f75d9a7cdd6e648320034e5cc2f8fe88f5a5294b7871
                             ";
             // line 37
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["mission"], "title", [], "any", false, false, false, 37), "html", null, true);
-            echo " </td>
+            echo " <br/>
                         </a>
                 ";
         }
@@ -134,22 +134,19 @@ class __TwigTemplate_31eb280837951f5f75d9a7cdd6e648320034e5cc2f8fe88f5a5294b7871
         </tr>
         </tbody>
     </table>
-    <button class=\"btn btn-md btn-primary mx-5 mb-5\">
-        <a href=\"";
-        // line 45
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
-        echo "\" style=\"color: white; text-decoration: none\">
-            Sign in
-        </a>
-    </button>
 
     ";
-        // line 50
+        // line 45
+        $this->loadTemplate("_signInBtn.html.twig", "targets/showTarget.html.twig", 45)->display($context);
+        // line 46
+        echo "
+    ";
+        // line 47
         if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_ADMIN")) {
-            // line 51
-            echo "        <button class=\"btn btn-md btn-success mx-2 mb-5\">
+            // line 48
+            echo "        <button class=\"btn btn-md btn-success ms-5 mb-5\">
             <a href=\"";
-            // line 52
+            // line 49
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("target_add");
             echo "\" style=\"color: white; text-decoration: none\">
                 Add a target
@@ -157,23 +154,23 @@ class __TwigTemplate_31eb280837951f5f75d9a7cdd6e648320034e5cc2f8fe88f5a5294b7871
         </button>
         <button class=\"btn btn-md btn-warning mx-1 mb-5\">
             <a href=\"";
-            // line 57
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("target_update", ["id" => twig_get_attribute($this->env, $this->source, ($context["target"] ?? null), "id", [], "any", false, false, false, 57)]), "html", null, true);
+            // line 54
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("target_update", ["id" => twig_get_attribute($this->env, $this->source, ($context["target"] ?? null), "id", [], "any", false, false, false, 54)]), "html", null, true);
             echo "\" style=\"color: white; text-decoration: none\">
                 Edit \"";
-            // line 58
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["target"] ?? null), "codeName", [], "any", false, false, false, 58), "html", null, true);
+            // line 55
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["target"] ?? null), "codeName", [], "any", false, false, false, 55), "html", null, true);
             echo "\"
             </a>
         </button>
         <button class=\"btn btn-md btn-danger mx-1 mb-5\">
             <a href=\"";
-            // line 62
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("target_delete", ["id" => twig_get_attribute($this->env, $this->source, ($context["target"] ?? null), "id", [], "any", false, false, false, 62)]), "html", null, true);
+            // line 59
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("target_delete", ["id" => twig_get_attribute($this->env, $this->source, ($context["target"] ?? null), "id", [], "any", false, false, false, 59)]), "html", null, true);
             echo "\" style=\"color: white; text-decoration: none\">
                 Delete \"";
-            // line 63
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["target"] ?? null), "codeName", [], "any", false, false, false, 63), "html", null, true);
+            // line 60
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["target"] ?? null), "codeName", [], "any", false, false, false, 60), "html", null, true);
             echo "\"
             </a>
         </button>
@@ -193,7 +190,7 @@ class __TwigTemplate_31eb280837951f5f75d9a7cdd6e648320034e5cc2f8fe88f5a5294b7871
 
     public function getDebugInfo()
     {
-        return array (  176 => 63,  172 => 62,  165 => 58,  161 => 57,  153 => 52,  150 => 51,  148 => 50,  140 => 45,  133 => 40,  124 => 37,  119 => 36,  115 => 35,  110 => 33,  104 => 30,  97 => 26,  90 => 22,  83 => 18,  70 => 12,  67 => 11,  65 => 10,  62 => 9,  58 => 8,  51 => 5,  47 => 4,  36 => 1,);
+        return array (  173 => 60,  169 => 59,  162 => 55,  158 => 54,  150 => 49,  147 => 48,  145 => 47,  142 => 46,  140 => 45,  133 => 40,  124 => 37,  119 => 36,  115 => 35,  110 => 33,  104 => 30,  97 => 26,  90 => 22,  83 => 18,  70 => 12,  67 => 11,  65 => 10,  62 => 9,  58 => 8,  51 => 5,  47 => 4,  36 => 1,);
     }
 
     public function getSourceContext()

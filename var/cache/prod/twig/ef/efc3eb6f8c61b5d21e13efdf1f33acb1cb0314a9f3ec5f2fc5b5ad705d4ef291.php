@@ -88,17 +88,30 @@ class __TwigTemplate_fe9b040e746a70a7a36579e6cd0c730a4ebc2285130a7c0fa551ed54f49
         echo "\"> Skills </a>
                 </li>
             </ul>
-        </div>
+            ";
+        // line 27
+        if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_ADMIN")) {
+            // line 28
+            echo "                <span class=\"nav-item my-2 mx-5\">
+                    <button class=\"btn btn-secondary btn-sm\"><a href=\"";
+            // line 29
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
+            echo "\" style=\"color: white; text-decoration: none\">Log out</a></button>
+                </span>
+            ";
+        }
+        // line 32
+        echo "        </div>
     </nav>
     <p class=\"mx-1 my-2\" style=\"font-size: 0.8em; color: limegreen\">
         ";
-        // line 30
+        // line 35
         if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_ADMIN")) {
-            // line 31
+            // line 36
             echo "             Connected as an administrator
         ";
         }
-        // line 33
+        // line 38
         echo "    </p>
 ";
     }
@@ -115,7 +128,7 @@ class __TwigTemplate_fe9b040e746a70a7a36579e6cd0c730a4ebc2285130a7c0fa551ed54f49
 
     public function getDebugInfo()
     {
-        return array (  102 => 33,  98 => 31,  96 => 30,  87 => 24,  81 => 21,  75 => 18,  69 => 15,  63 => 12,  53 => 5,  50 => 4,  46 => 3,  35 => 1,);
+        return array (  115 => 38,  111 => 36,  109 => 35,  104 => 32,  98 => 29,  95 => 28,  93 => 27,  87 => 24,  81 => 21,  75 => 18,  69 => 15,  63 => 12,  53 => 5,  50 => 4,  46 => 3,  35 => 1,);
     }
 
     public function getSourceContext()
