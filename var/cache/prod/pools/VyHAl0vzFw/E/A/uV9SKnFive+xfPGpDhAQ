@@ -1,0 +1,66 @@
+<?php //%255B4ffe8c625945cd599d9e083f89a8c695%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT a0_.id AS id_0, a0_.last_name AS last_name_1, a0_.first_name AS first_name_2, a0_.code_name AS code_name_3, a0_.nationality AS nationality_4 FROM agents a0_',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'e' => 'App\\Entity\\Agents',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'id_0' => 'id',
+                    'last_name_1' => 'lastName',
+                    'first_name_2' => 'firstName',
+                    'code_name_3' => 'codeName',
+                    'nationality_4' => 'nationality',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'e' => null,
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'id_0' => 'e',
+                    'last_name_1' => 'e',
+                    'first_name_2' => 'e',
+                    'code_name_3' => 'e',
+                    'nationality_4' => 'e',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'id_0' => 'App\\Entity\\Agents',
+                    'last_name_1' => 'App\\Entity\\Agents',
+                    'first_name_2' => 'App\\Entity\\Agents',
+                    'code_name_3' => 'App\\Entity\\Agents',
+                    'nationality_4' => 'App\\Entity\\Agents',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

@@ -1,0 +1,69 @@
+<?php //%255B37b874b1accc4010142f238dee670292%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT c0_.id AS id_0, c0_.last_name AS last_name_1, c0_.first_name AS first_name_2, c0_.birth_date AS birth_date_3, c0_.code_name AS code_name_4, c0_.nationality AS nationality_5 FROM contacts c0_',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'e' => 'App\\Entity\\Contacts',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'id_0' => 'id',
+                    'last_name_1' => 'lastName',
+                    'first_name_2' => 'firstName',
+                    'birth_date_3' => 'birthDate',
+                    'code_name_4' => 'codeName',
+                    'nationality_5' => 'nationality',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'e' => null,
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'id_0' => 'e',
+                    'last_name_1' => 'e',
+                    'first_name_2' => 'e',
+                    'birth_date_3' => 'e',
+                    'code_name_4' => 'e',
+                    'nationality_5' => 'e',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'id_0' => 'App\\Entity\\Contacts',
+                    'last_name_1' => 'App\\Entity\\Contacts',
+                    'first_name_2' => 'App\\Entity\\Contacts',
+                    'birth_date_3' => 'App\\Entity\\Contacts',
+                    'code_name_4' => 'App\\Entity\\Contacts',
+                    'nationality_5' => 'App\\Entity\\Contacts',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];
